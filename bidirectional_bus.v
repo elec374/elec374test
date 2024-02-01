@@ -10,9 +10,22 @@ module bidirectional_bus (
 reg [31:0]q;
 
 always @ (*) begin
-	if(RZout) q = BusMuxInRZ;
-	if(RAout) q = BusMuxInRA;
-	if(RBout) q = BusMuxInRB;
+	if(R0out) q = BusMuxInR0;
+	if(R1out) q = BusMuxInR1;
+	if(R2out) q = BusMuxInR2;
+	if(R3out) q = BusMuxInR3;
+	if(R4out) q = BusMuxInR4;
+	if(R5out) q = BusMuxInR5;
+	if(R6out) q = BusMuxInR6;
+	if(R7out) q = BusMuxInR7;
+	if(R8out) q = BusMuxInR8;
+	if(R9out) q = BusMuxInR9;
+	if(R10out) q = BusMuxInR10;
+	if(R11out) q = BusMuxInR11;
+	if(R12out) q = BusMuxInR12;
+	if(R13out) q = BusMuxInR13;
+	if(R14out) q = BusMuxInR14;
+	if(R15out) q = BusMuxInR15;
 end
 assign BusMuxOut = q;
 endmodule 
