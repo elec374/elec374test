@@ -26,6 +26,11 @@ always @ (*) begin
 	if(R13out) q = BusMuxInR13;
 	if(R14out) q = BusMuxInR14;
 	if(R15out) q = BusMuxInR15;
+	
+	if(HIout) q = BusMuxInHI;
+	if(LOout) q = BusMuxInLO;
+	if(Zlowout) q = BusMuxInZlow;
+	if(Zhighout) q = BusMuxInZhigh;
 end
 assign BusMuxOut = q;
 endmodule 
