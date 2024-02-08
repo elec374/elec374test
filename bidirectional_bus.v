@@ -1,8 +1,10 @@
 module bidirectional_bus (
 	//Mux
-	input [31:0]BusMuxInRZ, input [31:0]BusMuxInRA, input [31:0]BusMuxInRB,
+	input wire[4:0] BusMuxSelect,
 	//Encoder
-	input RZout, RAout, RBout, 
+	input [31:0] BusMuxInR0, BusMuxInR1,  BusMuxInR2, BusMuxInR3, BusMuxInR4, BusMuxInR5, BusMuxInR6, 
+	BusMuxInR7, BusMuxInR8,BusMuxInR9, BusMuxInR10, BusMuxInR11, BusMuxInR12,BusMuxInR13, BusMuxInR14,BusMuxInR15,
+	BusMuxInHI,BusMuxInLO, BusMuxInZlow, BusMuxInZhigh,BusMuxInPc, BusMuxInMDR, BusMuxInCsignextended,
 
 	output wire [31:0]BusMuxOut
 );
@@ -10,27 +12,33 @@ module bidirectional_bus (
 reg [31:0]q;
 
 always @ (*) begin
-	if(R0out) q = BusMuxInR0;
-	if(R1out) q = BusMuxInR1;
-	if(R2out) q = BusMuxInR2;
-	if(R3out) q = BusMuxInR3;
-	if(R4out) q = BusMuxInR4;
-	if(R5out) q = BusMuxInR5;
-	if(R6out) q = BusMuxInR6;
-	if(R7out) q = BusMuxInR7;
-	if(R8out) q = BusMuxInR8;
-	if(R9out) q = BusMuxInR9;
-	if(R10out) q = BusMuxInR10;
-	if(R11out) q = BusMuxInR11;
-	if(R12out) q = BusMuxInR12;
-	if(R13out) q = BusMuxInR13;
-	if(R14out) q = BusMuxInR14;
-	if(R15out) q = BusMuxInR15;
-	
-	if(HIout) q = BusMuxInHI;
-	if(LOout) q = BusMuxInLO;
-	if(Zlowout) q = BusMuxInZlow;
-	if(Zhighout) q = BusMuxInZhigh;
+	case(BusMuxSelect)
+		5'd0	:	q <= BusMuxInR0;
+		5'd1	:	q <= BusMuxInR1;
+		5'd2	:	q <= BusMuxInR2;
+		5'd3	:	q <= BusMuxInR3;
+		5'd4	:	q <= BusMuxInR4;
+		5'd5	:	q <= BusMuxInR5;
+		5'd6	:	q <= BusMuxInR6;
+		5'd7	:	q <= BusMuxInR7;
+		5'd8	:	q <= BusMuxInR8;
+		5'd9	:	q <= BusMuxInR9;
+		5'd10	:	q <= BusMuxInR10;
+		5'd11	:	q <= BusMuxInR11;
+		5'd12	:	q <= BusMuxInR12;
+		5'd13	:	q <= BusMuxInR13;
+		5'd14	:	q <= BusMuxInR14;
+		5'd15	:	q <= BusMuxInR15;
+		5'd16	:	q <= BusMuxInHI;
+		5'd17	:	q <= BusMuxInLO;
+		5'd18	:	q <= BusMuxInZlow;
+		5'd19	:	q <= BusMuxInZhigh;
+		5'd20	:	q <= BusMuxInPc;
+		5'd21	:	q <= BusMuxInMDR;
+		5'd23	:	q <= BusMuxInCsignextended;
+		5'd24 : 	q <= 32'hF;
+		default	:	q <= 32'd0;
+		endcase
 end
 assign BusMuxOut = q;
 endmodule 
