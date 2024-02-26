@@ -1,6 +1,6 @@
 module MDMux(
 input [31:0] BusMuxOut, Mdatain,
-input read
+input read,
 output reg [31:0] out
 );
 

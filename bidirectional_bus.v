@@ -4,7 +4,7 @@ module bidirectional_bus (
 	//Encoder
 	input [31:0] BusMuxInR0, BusMuxInR1,  BusMuxInR2, BusMuxInR3, BusMuxInR4, BusMuxInR5, BusMuxInR6, 
 	BusMuxInR7, BusMuxInR8,BusMuxInR9, BusMuxInR10, BusMuxInR11, BusMuxInR12,BusMuxInR13, BusMuxInR14,BusMuxInR15,
-	BusMuxInHI,BusMuxInLO, BusMuxInZlow, BusMuxInZhigh,BusMuxInPc, BusMuxInMDR, BusMuxInCsignextended,
+	BusMuxInHI,BusMuxInLO, BusMuxInZlow, BusMuxInZhigh,BusMuxInPc, BusMuxInMDR, BusMuxInCsignextended, BusMuxInIR, BusMuxInCout,
 
 	output wire [31:0]BusMuxOut
 );
@@ -36,7 +36,8 @@ always @ (*) begin
 		5'd20	:	q <= BusMuxInPc;
 		5'd21	:	q <= BusMuxInMDR;
 		5'd23	:	q <= BusMuxInCsignextended;
-		5'd24 : 	q <= 32'hF;
+		5'd24	: 	q <= BusMuxInIR;		
+		5'd32 : 	q <= 32'hF;
 		default	:	q <= 32'd0;
 		endcase
 end

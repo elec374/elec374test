@@ -30,7 +30,11 @@ always @(*) begin
 		32'h00200000	:Code <= 5'd21;
 		32'h00400000	:Code <= 5'd22;
 		32'h00800000	:Code <= 5'd23;
-		default:	Code <= 5'd24;
+		32'h01000000	:Code <= 5'd24;
+		32'h02000000	:Code <= 5'd25;
+		32'h04000000	:Code <= 5'd26;
+		
+		default:	Code <= 5'd32;
 		endcase
 	end
 	assign select = Code;
