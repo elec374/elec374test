@@ -3,6 +3,5 @@ module srl(
 	output wire [31:0] C
 );
 
-assign C[31] = A[31];
-assign C[30:0] = A[31:1];
+assign C = A >>> 1;
 endmodule
