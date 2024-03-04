@@ -1,87 +1,98 @@
 `timescale 1ns/10ps
-
 module and_tb;
+ reg PCout, Zlowout, MDRout, R2out, R3out; // add any other signals to see in your simulation
+ reg MARin, Zin, PCin, MDRin, IRin, Yin;
+ reg IncPC, Read, AND, R1in, R2in, R3in;
+ reg Clock;
+ reg [31:0] Mdatain;
+parameter Default = 4'b0000, Reg_load1a = 4'b0001, Reg_load1b = 4'b0010, Reg_load2a = 4'b0011,
+ Reg_load2b = 4'b0100, Reg_load3a = 4'b0101, Reg_load3b = 4'b0110, T0 = 4'b0111,
+ T1 = 4'b1000, T2 = 4'b1001, T3 = 4'b1010, T4 = 4'b1011, T5 = 4'b1100;
+ reg [3:0] Present_state = Default;
+datapath DUT(PCout, Zlowout, MDRout, R2out, R3out, MARin, Zin, PCin, MDRin, IRin, Yin, IncPC, Read, AND, R1in,
+R2in, R3in, Clock, Mdatain);
+// add test logic here
+initial
+ begin
+ Clock = 0;
+ forever #10 Clock = ~ Clock;
+end
+always @(posedge Clock) // finite state machine; if clock rising-edge
+ begin
+ case (Present_state)
+Default : Present_state = Reg_load1a;
+Reg_load1a : Present_state = Reg_load1b;
+Reg_load1b : Present_state = Reg_load2a;
+Reg_load2a : Present_state = Reg_load2b;
+Reg_load2b : Present_state = Reg_load3a;
+Reg_load3a : Present_state = Reg_load3b;
+Reg_load3b : Present_state = T0;
+T0 : Present_state = T1;
+T1 : Present_state = T2;
+T2 : Present_state = T3;
+T3 : Present_state = T4;
+T4 : Present_state = T5;
 
-    reg [31:0] operand_A;
-    reg [31:0] operand_B;
-    reg [31:0] result_dp; // Result from datapath AND gate
-    reg [31:0] result_alu; // Result from ALU AND operation
-    reg prev_Rz, clock;
-    reg [3:0] state;
+ endcase
+ end
 
-    wire [31:0] Rz;
-    wire [31:0] alu_opcode;
-
-    // Instantiate Datapath module
-    datapath dut (
-    .clock(clock),
-    .clear(1'b0), 
-    .Mdatain(32'h00000000), 
-    .Z(result_alu),
-    .HIin(32'h00000000),
-    .LOin(32'h00000000),
-    .PCin(32'h00000000),
-    .Zin(1'b0),
-    .Yin(1'b0),
-    .IRin(32'h00000000),
-    .MARin(32'h00000000),
-    .MDRin(32'h00000000),
-    .Read(1'b0),
-    .IncPC(1'b0),
-    .Csignextendedin(1'b0),
-    .BusMuxInR1(operand_A), // Connect operand A to HI input
-    .BusMuxInR2(operand_B), // Connect operand B to LO input
-    .BusMuxSelect(),
-    .MuxToMDR()
-);
-
-
-    // Instantiate ALU module
-    ALU alu (
-        .opcode(4'b0010), // Opcode for AND operation
-        .operand_A(operand_A), // Connect operand A to ALU input A
-        .operand_B(operand_B), // Connect operand B to ALU input B
-        .result(result_alu) // Connect ALU result to result_alu
-    );
-
-    initial begin
-        clock = 0;
-        state = 4'b0000;
-        operand_A = 32'h00000000;
-        operand_B = 32'h00000000;
-    end
-
-    always #10 clock = ~clock;
-
-    always @(negedge clock) state <= state + 1;
-
-    always @(posedge clock) begin
-        case(state)
-            0: begin
-                operand_A <= 32'h00000000;
-                operand_B <= 32'h00000000;
-            end
-            1: begin
-                operand_A <= 32'hffffffff;
-                operand_B <= 32'hffffffff;
-            end
-            2: begin
-                operand_A <= 32'h00000000;
-                operand_B <= 32'hffffffff;
-            end
-            3: begin
-                operand_A <= 32'hffffffff;
-                operand_B <= 32'hffff0000;
-            end
-            4: begin
-                operand_A <= 32'hffffffff;
-                operand_B <= 32'h0000ffff;
-            end
-            default: begin
-                operand_A <= 32'h00000000;
-                operand_B <= 32'h00000000;
-            end
-        endcase
-    end
-
+always @(Present_state) // do the required job in each state
+ begin
+ case (Present_state) // assert the required signals in each clock cycle
+Default: begin
+PCout <= 0; Zlowout <= 0; MDRout <= 0; // initialize the signals
+ R2out <= 0; R3out <= 0; MARin <= 0; Zin <= 0;
+ PCin <=0; MDRin <= 0; IRin <= 0; Yin <= 0;
+ IncPC <= 0; Read <= 0; AND <= 0;
+ R1in <= 0; R2in <= 0; R3in <= 0; Mdatain <= 32'h00000000;
+end
+Reg_load1a: begin
+Mdatain <= 32'h00000012;
+Read = 0; MDRin = 0; // the first zero is there for completeness
+#10 Read <= 1; MDRin <= 1; // and the first 10ns might not be needed depending on your
+#15 Read <= 0; MDRin <= 0; // implementation; same goes for the other states
+end
+ Reg_load1b: begin
+ #10 MDRout <= 1; R2in <= 1;
+ #15 MDRout <= 0; R2in <= 0; // initialize R2 with the value $12
+end
+Reg_load2a: begin
+Mdatain <= 32'h00000014;
+#10 Read <= 1; MDRin <= 1;
+#15 Read <= 0; MDRin <= 0;
+end
+ Reg_load2b: begin
+ #10 MDRout <= 1; R3in <= 1;
+ #15 MDRout <= 0; R3in <= 0; // initialize R3 with the value $14
+end
+Reg_load3a: begin
+Mdatain <= 32'h00000018;
+#10 Read <= 1; MDRin <= 1;
+#15 Read <= 0; MDRin <= 0;
+end
+ Reg_load3b: begin
+ #10 MDRout <= 1; R1in <= 1;
+ #15 MDRout <= 0; R1in <= 0; // initialize R1 with the value $18
+end
+T0: begin // see if you need to de-assert these signals
+PCout <= 1; MARin <= 1; IncPC <= 1; Zin <= 1;
+end
+T1: begin
+Zlowout <= 1; PCin <= 1; Read <= 1; MDRin <= 1;
+Mdatain <= 32'h28918000; // opcode for “and R1, R2, R3”
+end
+T2: begin
+MDRout <= 1; IRin <= 1;
+end
+T3: begin
+R2out <= 1; Yin <= 1;
+end
+T4: begin
+R3out <= 1; AND <= 1; Zin <= 0; // de-assert Zin
+end
+T5: begin
+Zlowout <= 0; R1in <= 0; // de-assert Zlowout and R1in
+end
+ endcase
+ end
 endmodule

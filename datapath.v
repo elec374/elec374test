@@ -4,7 +4,7 @@ module datapath(
 	input wire HIin, LOin, PCin, Zin, Yin, IRin, MARin, MDRin, Read, IncPC, Csignextendedin, R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9in, R10in, R11in, R12in, R13in, R14in, R15in 
 );
 wire HIout, LOout, PCout, Zhighout, Zlowout, MDRout;
-wire[15:0] rOut;
+wire [15:0] R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, R8out, R9out, R10out, R11out, R12out, R13out, R14out, R15out;
 wire [31:0] BusMuxOut, BusMuxInCsignextended, BusMuxInHI, BusMuxInLO, BusMuxInZ, BusMuxInZlow, BusMuxInZhigh, BusMuxInPC, BusMuxInMDR, BusMuxInMAR, BusMuxInMdata, BusMuxInR0, BusMuxInR1, BusMuxInR2, BusMuxInR3, BusMuxInR4, BusMuxInR5, BusMuxInR6, BusMuxInR7, BusMuxInR8, BusMuxInR9, BusMuxInR10, BusMuxInR11, BusMuxInR12, BusMuxInR13, BusMuxInR14, BusMuxInR15,BusMuxInIR;
 wire [4:0] BusMuxSelect;
 wire [31:0] MuxToMDR;
@@ -30,7 +30,7 @@ edgetrigreg LO(clear, clock, LOin, BusMuxOut, BusMuxInLO);
 edgetrigreg Zlow(clear, clock, Zlowin, BusMuxOut, BusMuxInZlow);
 edgetrigreg Zhigh(clear, clock, Zhighin, BusMuxOut, BusMuxInZhigh);
 edgetrigreg PC(clear, clock, PCin, BusMuxOut, BusMuxInPC);
-edgetrigreg MDR(clear, clock, MDRin, BusMuxOut, BusMuxInMDR);
+edgetrigreg MDR(clear, clock, MDRin, MUXtoMDR, BusMuxInMDR);
 edgetrigreg MAR(clear, clock, MARin, BusMuxOut, BusMuxInMAR);
 edgetrigreg Mdata(clear, clock, Mdatain, BusMuxOut, BusMuxInMdata);
 edgetrigreg Csignextended(clear, clock, Csignextendedin, BusMuxOut, BusMuxInCsignextended);
