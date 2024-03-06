@@ -16,7 +16,7 @@ reg [3:0] Present_state = Default;
  
 datapath DUT(.PCout(PCout), .Zlowout(Zlowout), .MDRout(MDRout), .R2out(R2out), 
 .R3out(R3out), .MDRin(MDRin), .Yin(Yin), .Read(Read), .R1in(R1in), .R2in(R2in), 
-.R3in(R3in), .clock(clock), .Mdatain(Mdatain), .clear(clear), .IRin(IRin));
+.R3in(R3in), .clock(clock), .Mdatain(Mdatain), .clear(clear), .IRin(IRin), .AND(AND));
 
 initial
 	begin
@@ -90,7 +90,7 @@ always @(Present_state) // do the required job in each state
 				T1: begin
 				PCout <= 0;
 				Zlowout <= 1; Read <= 1; MDRin <= 1;
-				Mdatain <= 32'b0010; // opcode for “and R1, R2, R3”
+				Mdatain <= 32'b0011; // opcode for “and R1, R2, R3”
 		end
 				T2: begin
 				Zlowout <= 0; Read <= 0; MDRin <= 0;
@@ -102,11 +102,12 @@ always @(Present_state) // do the required job in each state
 		end
 				T4: begin
 				R2out <= 0; Yin <= 0;
-				R3out <= 1; AND <= 1;
+				R3out <= 1; 
+				#10 AND <= 1;
 		end
 				T5: begin
 				R3out <= 0; AND <= 0; 
-				Zlowout <= 0; R1in <= 0; // de-assert Zlowout and R1in
+				Zlowout <= 1; R1in <= 1; // de-assert Zlowout and R1in
 		end
 		endcase
 	end
