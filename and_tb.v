@@ -16,7 +16,7 @@ reg [3:0] Present_state = Default;
  
 datapath DUT(.PCout(PCout), .Zlowout(Zlowout), .MDRout(MDRout), .R2out(R2out), 
 .R3out(R3out), .MDRin(MDRin), .Yin(Yin), .Read(Read), .R1in(R1in), .R2in(R2in), 
-.R3in(R3in), .clock(clock), .Mdatain(Mdatain), .clear(clear));
+.R3in(R3in), .clock(clock), .Mdatain(Mdatain), .clear(clear), .IRin(IRin));
 
 initial
 	begin

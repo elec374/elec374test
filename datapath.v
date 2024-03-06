@@ -31,11 +31,11 @@ edgetrigreg R13(clear, clock, R13in, BusMuxOut, BusMuxInR13);
 edgetrigreg R14(clear, clock, R14in, BusMuxOut, BusMuxInR14);
 edgetrigreg R15(clear, clock, R15in, BusMuxOut, BusMuxInR15);
 
-edgetrigreg PC(clear, clock, BusMuxOut, PCin, BusMuxInPC);
-edgetrigreg IR(clear, clock, BusMuxOut, IRin, BusMuxInIR);
-edgetrigreg Y(clear, clock, BusMuxOut, Yin, BusMuxInY);
-edgetrigreg HI(clear, clock, BusMuxOut, HIin, BusMuxInHI);
-edgetrigreg LO(clear, clock, BusMuxOut, LOin, BusMuxInLO);
+edgetrigreg PC(clear, clock, PCin, BusMuxOut, BusMuxInPC);
+edgetrigreg IR(clear, clock, IRin, BusMuxOut, BusMuxInIR);
+edgetrigreg Y(clear, clock, Yin, BusMuxOut, BusMuxInY);
+edgetrigreg HI(clear, clock, HIin, BusMuxOut, BusMuxInHI);
+edgetrigreg LO(clear, clock, LOin, BusMuxOut, BusMuxInLO);
 
 edgetrigreg ZHI(clear, clock, BusMuxOut, ZHIin, BusMuxInZHI);
 edgetrigreg ZLO(clear, clock, BusMuxOut, ZLOin, BusMuxInZLO);
