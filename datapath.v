@@ -1,13 +1,19 @@
 module datapath(
-	input wire clock, clear,
-	input wire [31:0] Mdatain, Z,
-	input wire HIin, LOin, PCin, Zin, Yin, IRin, MARin, MDRin, Read, IncPC, Csignextendedin, R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9in, R10in, R11in, R12in, R13in, R14in, R15in 
-);
-wire HIout, LOout, PCout, Zhighout, Zlowout, MDRout;
-wire [15:0] R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, R8out, R9out, R10out, R11out, R12out, R13out, R14out, R15out;
-wire [31:0] BusMuxOut, BusMuxInCsignextended, BusMuxInHI, BusMuxInLO, BusMuxInZ, BusMuxInZlow, BusMuxInZhigh, BusMuxInPC, BusMuxInMDR, BusMuxInMAR, BusMuxInMdata, BusMuxInR0, BusMuxInR1, BusMuxInR2, BusMuxInR3, BusMuxInR4, BusMuxInR5, BusMuxInR6, BusMuxInR7, BusMuxInR8, BusMuxInR9, BusMuxInR10, BusMuxInR11, BusMuxInR12, BusMuxInR13, BusMuxInR14, BusMuxInR15,BusMuxInIR;
-wire [4:0] BusMuxSelect;
-wire [31:0] MuxToMDR;
+
+	input clear, clock, 
+	input [31:0] Mdatain,
+	input PCin, IRin, Yin, HIin, LOin, MDRin, ZHIin, ZLOin, Read,
+	input wire R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9in, R10in, R11in, R12in, R13in, R14in, R15in,
+	
+	input HIout, LOout, ZHighout, Zlowout, PCout, MDRout, InPortout, Cout,
+	input R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, R8out, R9out, R10out, R11out, R12out, R13out, R14out, R15out
+	);
+
+wire [31:0] BusMuxInR0, BusMuxInR1, BusMuxInR2, BusMuxInR3, BusMuxInR4, BusMuxInR5, BusMuxInR6, BusMuxInR7, BusMuxInR8, BusMuxInR9, BusMuxInR10, BusMuxInR11, BusMuxInR12, BusMuxInR13, BusMuxInR14, BusMuxInR15;
+wire [31:0] BusMuxInPC, BusMuxInIR, BusMuxInY, BusMuxInHI, BusMuxInLO, BusMuxInZHI, BusMuxInZLO, BusMuxInMDR, BusMuxInPort, BusMuxInCsignextended;
+wire [5:0] BusMuxSelect;
+wire [31:0] BusMuxOut;
+
 edgetrigreg R0(clear, clock, R0in, BusMuxOut, BusMuxInR0);
 edgetrigreg R1(clear, clock, R1in, BusMuxOut, BusMuxInR1);
 edgetrigreg R2(clear, clock, R2in, BusMuxOut, BusMuxInR2);
@@ -24,21 +30,24 @@ edgetrigreg R12(clear, clock, R12in, BusMuxOut, BusMuxInR12);
 edgetrigreg R13(clear, clock, R13in, BusMuxOut, BusMuxInR13);
 edgetrigreg R14(clear, clock, R14in, BusMuxOut, BusMuxInR14);
 edgetrigreg R15(clear, clock, R15in, BusMuxOut, BusMuxInR15);
-edgetrigreg IR(clear, clock, IRin, BusMuxOut, BusMuxInIR);
-edgetrigreg HI(clear, clock, HIin, BusMuxOut, BusMuxInHI);
-edgetrigreg LO(clear, clock, LOin, BusMuxOut, BusMuxInLO);
-edgetrigreg Zlow(clear, clock, Zlowin, BusMuxOut, BusMuxInZlow);
-edgetrigreg Zhigh(clear, clock, Zhighin, BusMuxOut, BusMuxInZhigh);
-edgetrigreg PC(clear, clock, PCin, BusMuxOut, BusMuxInPC);
-edgetrigreg MDR(clear, clock, MDRin, MUXtoMDR, BusMuxInMDR);
-edgetrigreg MAR(clear, clock, MARin, BusMuxOut, BusMuxInMAR);
-edgetrigreg Mdata(clear, clock, Mdatain, BusMuxOut, BusMuxInMdata);
-edgetrigreg Csignextended(clear, clock, Csignextendedin, BusMuxOut, BusMuxInCsignextended);
 
-//think this works
+edgetrigreg PC(clear, clock, BusMuxOut, PCin, BusMuxInPC);
+edgetrigreg IR(clear, clock, BusMuxOut, IRin, BusMuxInIR);
+edgetrigreg Y(clear, clock, BusMuxOut, Yin, BusMuxInY);
+edgetrigreg HI(clear, clock, BusMuxOut, HIin, BusMuxInHI);
+edgetrigreg LO(clear, clock, BusMuxOut, LOin, BusMuxInLO);
 
-MDMux mdm(BusMuxOut, Mdatain, Read, MUXtoMDR);
-bidirectional_bus bus(BusMuxSelect, BusMuxInR0,BusMuxInR1,BusMuxInR2,BusMuxInR3,BusMuxInR4,BusMuxInR5,BusMuxInR6,BusMuxInR7,BusMuxInR8,BusMuxInR9,BusMuxInR10,BusMuxInR11,BusMuxInR12,BusMuxInR13,BusMuxInR14,BusMuxInR15,BusMuxInHI,BusMuxInLO,BusMuxInZlow,BusMuxInZhigh,BusMuxInPC,BusMuxInMDR, BusMuxInCsignextended, BusMuxInIR, BusMuxOut);
-BusMuxEncoder bme({HIout, LOout, PCout, Zhighout, Zlowout, MDRout, rOut}, BusMuxSelect);
-ALU alu(IRin, BusMuxOut, BusMuxOut, Z);
+edgetrigreg ZHI(clear, clock, BusMuxOut, ZHIin, BusMuxInZHI);
+edgetrigreg ZLO(clear, clock, BusMuxOut, ZLOin, BusMuxInZLO);
+
+MDRreg MDR(clear, clock, MDRin, Mdatain, BusMuxOut, Read, BusMuxInMDR);
+
+BusMuxEncoder bme({Yout,IRout,Cout, InPortout, MDRout, PCout, Zlowout, ZHighout, LOout, HIout, R15out, R14out, R13out, R12out, R11out, R10out, R9out, R8out, R7out, R6out, R5out, R4out, R3out, R2out, R1out,R0out}, BusMuxSelect);
+
+
+//ALU(BusMuxInIR, BusMuxInY, BusMuxOut, BusMuxOut);
+bidirectional_bus bus(BusMuxSelect, BusMuxInR0, BusMuxInR1,  BusMuxInR2, BusMuxInR3, BusMuxInR4, BusMuxInR5, BusMuxInR6, BusMuxInR7, BusMuxInR8, BusMuxInR9, BusMuxInR10, BusMuxInR11, BusMuxInR12, BusMuxInR13, BusMuxInR14, BusMuxInR15, BusMuxInHI, BusMuxInLO, BusMuxInZHI, BusMuxInZLO, BusMuxInPC, BusMuxInMDR, BusMuxInPort, BusMuxInCsignextended,BusMuxInIR,BusMuxInY, BusMuxOut);
+
+
+
 endmodule 

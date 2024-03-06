@@ -1,16 +1,18 @@
 //2 - 1 multiplexer 
 //S - Select | D0,D1 - Input
 module mux2x1(
-Y, D0, D1, S
+	input [31:0] Mdatain, BusMuxOut, 
+	input read, 
+	output reg [31:0] MDRin
 );
 
-
-output Y;
-input D0, D1, S;
-wire T1, T2,SBar;
-
-and (T1, D1, S), (T2,D0,SBar);
-not (SBar, S);
-or (Y, T1, T2);
+always @* begin
+    if (!read) begin
+        MDRin = BusMuxOut;
+    end
+    else begin
+        MDRin = Mdatain;
+    end
+end
 
 endmodule 
