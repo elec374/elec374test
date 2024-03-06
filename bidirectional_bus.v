@@ -37,8 +37,6 @@ always @ (*) begin
 		5'd21	:	q <= BusMuxInMDR[31:0];
 		5'd22	:	q <= BusMuxInPort[31:0];
 		5'd23	: 	q <= BusMuxInCsignextended[31:0];
-		
-		default: q = 32'd0;
 	endcase
 end
 

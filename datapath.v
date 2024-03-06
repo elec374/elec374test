@@ -42,7 +42,9 @@ edgetrigreg ZLO(clear, clock, BusMuxOut, ZLOin, BusMuxInZLO);
 
 MDRreg MDR(clear, clock, MDRin, Mdatain, BusMuxOut, Read, BusMuxInMDR);
 
-BusMuxEncoder bme({R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, R8out, R9out, R10out, R11out, R12out, R13out, R14out, R15out, HIout, LOout, ZHighout, Zlowout, PCout, MDRout, InPortout, Cout}, BusMuxSelect);
+BusMuxEncoder bme({Cout, InPortout, MDRout, PCout, Zlowout, ZHighout, LOout, HIout, R15out, R14out, R13out, R12out, R11out, R10out, R9out, R8out, R7out, R6out, R5out, R4out, R3out, R2out, R1out,R0out}, BusMuxSelect);
+
+
 
 bidirectional_bus bus(BusMuxSelect, BusMuxInR0, BusMuxInR1,  BusMuxInR2, BusMuxInR3, BusMuxInR4, BusMuxInR5, BusMuxInR6, BusMuxInR7, BusMuxInR8, BusMuxInR9, BusMuxInR10, BusMuxInR11, BusMuxInR12, BusMuxInR13, BusMuxInR14, BusMuxInR15, BusMuxInHI, BusMuxInLO, BusMuxInZHI, BusMuxInZLO, BusMuxInPC, BusMuxInMDR, BusMuxInPort, BusMuxInCsignextended, BusMuxOut);
 

@@ -18,7 +18,6 @@ datapath DUT(.PCout(PCout), .Zlowout(Zlowout), .MDRout(MDRout), .R2out(R2out),
 .R3out(R3out), .MDRin(MDRin), .Yin(Yin), .Read(Read), .R1in(R1in), .R2in(R2in), 
 .R3in(R3in), .clock(clock), .Mdatain(Mdatain), .clear(clear));
 
-
 initial
 	begin
 		clock = 0;
@@ -59,30 +58,31 @@ always @(Present_state) // do the required job in each state
 				Reg_load1a: begin
 				Mdatain <= 32'h00000012;
 				Read = 0; MDRin = 0; // the first zero is there for completeness
-				#10 Read <= 1; MDRin <= 1; // and the first 10ns might not be needed depending on your
-				#15 Read <= 0; MDRin <= 0; 
+				Read <= 1; MDRin <= 1; // and the first 10ns might not be needed depending on your
+				#20 Read <= 0; MDRin <= 0; 
 		end
 				Reg_load1b: begin
-				#10 MDRout <= 1; R2in <= 1;
-				#15 MDRout <= 0; R2in <= 0; // initialize R2 with the value $12
+				Mdatain <= 32'h00000011;
+				MDRout <= 1; R2in <= 1;
+				#20 MDRout <= 0; R2in <= 0; // initialize R2 with the value $12
 		end
 				Reg_load2a: begin
 				Mdatain <= 32'h00000014;
-				#10 Read <= 1; MDRin <= 1;
-				#15 Read <= 0; MDRin <= 0;
+				Read <= 1; MDRin <= 1;
+				#20 Read <= 0; MDRin <= 0;
 		end
 				Reg_load2b: begin
-				#10 MDRout <= 1; R3in <= 1;
-				#15 MDRout <= 0; R3in <= 0; // initialize R3 with the value $14
+				MDRout <= 1; R3in <= 1;
+				#20 MDRout <= 0; R3in <= 0; // initialize R3 with the value $14
 		end
 				Reg_load3a: begin
 				Mdatain <= 32'h00000018;
-				#10 Read <= 1; MDRin <= 1;
-				#15 Read <= 0; MDRin <= 0;
+				Read <= 1; MDRin <= 1;
+				#20 Read <= 0; MDRin <= 0;
 		end
 				Reg_load3b: begin
-				#10 MDRout <= 1; R1in <= 1;
-				#15 MDRout <= 0; R1in <= 0; // initialize R1 with the value $18
+				MDRout <= 1; R1in <= 1;
+				#20 MDRout <= 0; R1in <= 0; // initialize R1 with the value $18
 		end
 				T0: begin 
 				PCout <= 1;

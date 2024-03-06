@@ -8,10 +8,10 @@ module mux2x1(
 
 always @* begin
     if (!read) begin
-        MDRin = Mdatain;
+        MDRin = BusMuxOut;
     end
     else begin
-        MDRin = BusMuxOut;
+        MDRin = Mdatain;
     end
 end
 
