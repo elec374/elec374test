@@ -5,7 +5,7 @@ module datapath(
 	input PCin, IRin, Yin, HIin, LOin, MDRin, ZHIin, ZLOin, Read, AND,
 	input wire R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9in, R10in, R11in, R12in, R13in, R14in, R15in,
 	
-	input HIout, LOout, ZHighout, Zlowout, PCout, MDRout, InPortout, Cout,
+	input HIout, LOout, ZHighout, Zlowout, PCout, MDRout, InPortout, Cout, Zhighout,
 	input R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, R8out, R9out, R10out, R11out, R12out, R13out, R14out, R15out
 	);
 
@@ -45,7 +45,7 @@ MDRreg MDR(clear, clock, MDRin, Mdatain, BusMuxOut, Read, BusMuxInMDR);
 BusMuxEncoder bme({Yout,IRout,Cout, InPortout, MDRout, PCout, Zlowout, ZHighout, LOout, HIout, R15out, R14out, R13out, R12out, R11out, R10out, R9out, R8out, R7out, R6out, R5out, R4out, R3out, R2out, R1out,R0out}, BusMuxSelect);
 
 
-ALU alu(BusMuxInIR,AND, BusMuxInY, BusMuxOut, BusMuxInZLO);
+ALU alu(BusMuxInIR,AND, BusMuxInY, BusMuxOut, BusMuxInZLO, BusMuxInZHI);
 bidirectional_bus bus(BusMuxSelect, BusMuxInR0, BusMuxInR1,  BusMuxInR2, BusMuxInR3, BusMuxInR4, BusMuxInR5, BusMuxInR6, BusMuxInR7, BusMuxInR8, BusMuxInR9, BusMuxInR10, BusMuxInR11, BusMuxInR12, BusMuxInR13, BusMuxInR14, BusMuxInR15, BusMuxInHI, BusMuxInLO, BusMuxInZHI, BusMuxInZLO, BusMuxInPC, BusMuxInMDR, BusMuxInPort, BusMuxInCsignextended,BusMuxInIR,BusMuxInY, BusMuxOut);
 
 
