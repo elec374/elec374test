@@ -13,6 +13,7 @@ wire [31:0] BusMuxInR0, BusMuxInR1, BusMuxInR2, BusMuxInR3, BusMuxInR4, BusMuxIn
 wire [31:0] BusMuxInPC, BusMuxInIR, BusMuxInY, BusMuxInHI, BusMuxInLO, BusMuxInZHI, BusMuxInZLO, BusMuxInMDR, BusMuxInPort, BusMuxInCsignextended;
 wire [5:0] BusMuxSelect;
 wire [31:0] BusMuxOut;
+wire [63:0] alu_out;
 
 edgetrigreg R0(clear, clock, R0in, BusMuxOut, BusMuxInR0);
 edgetrigreg R1(clear, clock, R1in, BusMuxOut, BusMuxInR1);
@@ -37,15 +38,15 @@ edgetrigreg Y(clear, clock, Yin, BusMuxOut, BusMuxInY);
 edgetrigreg HI(clear, clock, HIin, BusMuxOut, BusMuxInHI);
 edgetrigreg LO(clear, clock, LOin, BusMuxOut, BusMuxInLO);
 
-edgetrigreg ZHI(clear, clock, BusMuxOut, ZHIin, BusMuxInZHI);
-edgetrigreg ZLO(clear, clock, BusMuxOut, ZLOin, BusMuxInZLO);
+edgetrigreg ZHI(clear, clock, ZHIin, alu_out[63:32], BusMuxInZHI);
+edgetrigreg ZLO(clear, clock, ZLOin, alu_out[31:0], BusMuxInZLO);
 
 MDRreg MDR(clear, clock, MDRin, Mdatain, BusMuxOut, Read, BusMuxInMDR);
 
 BusMuxEncoder bme({Yout,IRout,Cout, InPortout, MDRout, PCout, Zlowout, ZHighout, LOout, HIout, R15out, R14out, R13out, R12out, R11out, R10out, R9out, R8out, R7out, R6out, R5out, R4out, R3out, R2out, R1out,R0out}, BusMuxSelect);
 
 
-ALU alu(BusMuxInIR,AND, BusMuxInY, BusMuxOut, BusMuxInZLO);
+ALU alu(BusMuxInIR, AND, BusMuxInY, BusMuxOut, alu_out);
 bidirectional_bus bus(BusMuxSelect, BusMuxInR0, BusMuxInR1,  BusMuxInR2, BusMuxInR3, BusMuxInR4, BusMuxInR5, BusMuxInR6, BusMuxInR7, BusMuxInR8, BusMuxInR9, BusMuxInR10, BusMuxInR11, BusMuxInR12, BusMuxInR13, BusMuxInR14, BusMuxInR15, BusMuxInHI, BusMuxInLO, BusMuxInZHI, BusMuxInZLO, BusMuxInPC, BusMuxInMDR, BusMuxInPort, BusMuxInCsignextended,BusMuxInIR,BusMuxInY, BusMuxOut);
 
 

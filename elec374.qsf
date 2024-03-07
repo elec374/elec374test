@@ -85,4 +85,5 @@ set_global_assignment -name VERILOG_FILE and_tb.v
 set_global_assignment -name VERILOG_FILE ALU.v
 set_global_assignment -name VERILOG_FILE MDRreg.v
 set_global_assignment -name VERILOG_FILE neg_gate.v
+set_global_assignment -name VERILOG_FILE booths.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
