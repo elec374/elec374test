@@ -1,5 +1,5 @@
 Analysis & Synthesis report for elec374
-Thu Mar 07 10:39:16 2024
+Thu Mar 07 11:35:29 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -73,14 +73,14 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Mar 07 10:39:16 2024           ;
+; Analysis & Synthesis Status     ; Successful - Thu Mar 07 11:35:29 2024           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; elec374                                         ;
 ; Top-level Entity Name           ; datapath                                        ;
 ; Family                          ; Cyclone V                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                             ;
 ; Total registers                 ; 0                                               ;
-; Total pins                      ; 85                                              ;
+; Total pins                      ; 84                                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0                                               ;
 ; Total DSP Blocks                ; 0                                               ;
@@ -185,8 +185,8 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -196,32 +196,32 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                       ;
-+---------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path      ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                              ; Library ;
-+---------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
-; srl.v                                 ; yes             ; User Verilog HDL File        ; C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/srl.v           ;         ;
-; sra.v                                 ; yes             ; User Verilog HDL File        ; C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/sra.v           ;         ;
-; shl.v                                 ; yes             ; User Verilog HDL File        ; C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/shl.v           ;         ;
-; rotright.v                            ; yes             ; User Verilog HDL File        ; C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/rotright.v      ;         ;
-; rotleft.v                             ; yes             ; User Verilog HDL File        ; C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/rotleft.v       ;         ;
-; ../../elec374test/ripplecarryaddr.v   ; yes             ; User Verilog HDL File        ; C:/Users/alex/OneDrive/Desktop/elec374/elec374test/ripplecarryaddr.v      ;         ;
-; ../../elec374test/edgetrigreg.v       ; yes             ; User Verilog HDL File        ; C:/Users/alex/OneDrive/Desktop/elec374/elec374test/edgetrigreg.v          ;         ;
-; ../../elec374test/datapath.v          ; yes             ; User Verilog HDL File        ; C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v             ;         ;
-; ../../elec374test/bidirectional_bus.v ; yes             ; User Verilog HDL File        ; C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v    ;         ;
-; mux2x1.v                              ; yes             ; User Verilog HDL File        ; C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/mux2x1.v        ;         ;
-; BusMuxEncoder.v                       ; yes             ; User Verilog HDL File        ; C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/BusMuxEncoder.v ;         ;
-; and_gate.v                            ; yes             ; User Verilog HDL File        ; C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/and_gate.v      ;         ;
-; or_gate.v                             ; yes             ; User Verilog HDL File        ; C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/or_gate.v       ;         ;
-; not_gate.v                            ; yes             ; User Verilog HDL File        ; C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/not_gate.v      ;         ;
-; ALU.v                                 ; yes             ; User Verilog HDL File        ; C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v           ;         ;
-; MDRreg.v                              ; yes             ; User Verilog HDL File        ; C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/MDRreg.v        ;         ;
-; neg_gate.v                            ; yes             ; User Verilog HDL File        ; C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/neg_gate.v      ;         ;
-; booths.v                              ; yes             ; User Verilog HDL File        ; C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/booths.v        ;         ;
-; sub_gate.v                            ; yes             ; User Verilog HDL File        ; C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/sub_gate.v      ;         ;
-; div.v                                 ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/div.v           ;         ;
-+---------------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                     ;
++---------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path      ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                            ; Library ;
++---------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
+; srl.v                                 ; yes             ; User Verilog HDL File        ; C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/srl.v               ;         ;
+; sra.v                                 ; yes             ; User Verilog HDL File        ; C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/sra.v               ;         ;
+; shl.v                                 ; yes             ; User Verilog HDL File        ; C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/shl.v               ;         ;
+; rotright.v                            ; yes             ; User Verilog HDL File        ; C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/rotright.v          ;         ;
+; rotleft.v                             ; yes             ; User Verilog HDL File        ; C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/rotleft.v           ;         ;
+; ../../elec374test/ripplecarryaddr.v   ; yes             ; User Verilog HDL File        ; C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ripplecarryaddr.v   ;         ;
+; ../../elec374test/edgetrigreg.v       ; yes             ; User Verilog HDL File        ; C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/edgetrigreg.v       ;         ;
+; ../../elec374test/datapath.v          ; yes             ; User Verilog HDL File        ; C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v          ;         ;
+; ../../elec374test/bidirectional_bus.v ; yes             ; User Verilog HDL File        ; C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v ;         ;
+; mux2x1.v                              ; yes             ; User Verilog HDL File        ; C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/mux2x1.v            ;         ;
+; BusMuxEncoder.v                       ; yes             ; User Verilog HDL File        ; C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/BusMuxEncoder.v     ;         ;
+; and_gate.v                            ; yes             ; User Verilog HDL File        ; C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_gate.v          ;         ;
+; or_gate.v                             ; yes             ; User Verilog HDL File        ; C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/or_gate.v           ;         ;
+; not_gate.v                            ; yes             ; User Verilog HDL File        ; C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/not_gate.v          ;         ;
+; ALU.v                                 ; yes             ; User Verilog HDL File        ; C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v               ;         ;
+; MDRreg.v                              ; yes             ; User Verilog HDL File        ; C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/MDRreg.v            ;         ;
+; neg_gate.v                            ; yes             ; User Verilog HDL File        ; C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/neg_gate.v          ;         ;
+; booths.v                              ; yes             ; User Verilog HDL File        ; C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths.v            ;         ;
+; sub_gate.v                            ; yes             ; User Verilog HDL File        ; C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/sub_gate.v          ;         ;
+; div.v                                 ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/div.v               ;         ;
++---------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -240,13 +240,13 @@ refer to the applicable agreement for further details.
 ;                                             ;       ;
 ; Dedicated logic registers                   ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 85    ;
+; I/O pins                                    ; 84    ;
 ;                                             ;       ;
 ; Total DSP Blocks                            ; 0     ;
 ;                                             ;       ;
 ; Maximum fan-out node                        ; clear ;
 ; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 85    ;
+; Total fan-out                               ; 84    ;
 ; Average fan-out                             ; 0.50  ;
 +---------------------------------------------+-------+
 
@@ -256,7 +256,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |datapath                  ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 85   ; 0            ; |datapath           ; datapath    ; work         ;
+; |datapath                  ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 84   ; 0            ; |datapath           ; datapath    ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -638,7 +638,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------+---------------------------------+
 ; Type              ; Count                           ;
 +-------------------+---------------------------------+
-; boundary_port     ; 85                              ;
+; boundary_port     ; 84                              ;
 ;                   ;                                 ;
 ; Max LUT depth     ; 0.00                            ;
 ; Average LUT depth ; 0.00                            ;
@@ -660,299 +660,298 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Thu Mar 07 10:38:55 2024
+    Info: Processing started: Thu Mar 07 11:35:15 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off elec374 -c elec374
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file srl.v
-    Info (12023): Found entity 1: srl_gate File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/srl.v Line: 1
+    Info (12023): Found entity 1: srl_gate File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/srl.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sra.v
-    Info (12023): Found entity 1: sra_gate File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/sra.v Line: 1
+    Info (12023): Found entity 1: sra_gate File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/sra.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shl.v
-    Info (12023): Found entity 1: shl_gate File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/shl.v Line: 1
+    Info (12023): Found entity 1: shl_gate File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/shl.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rotright.v
-    Info (12023): Found entity 1: rotright_gate File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/rotright.v Line: 1
+    Info (12023): Found entity 1: rotright_gate File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/rotright.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file rotleft.v
-    Info (12023): Found entity 1: rotleft_gate File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/rotleft.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/alex/onedrive/desktop/elec374/elec374test/ripplecarryaddr.v
-    Info (12023): Found entity 1: ripplecarryaddr File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/ripplecarryaddr.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/alex/onedrive/desktop/elec374/elec374test/edgetrigreg.v
-    Info (12023): Found entity 1: edgetrigreg File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/edgetrigreg.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/alex/onedrive/desktop/elec374/elec374test/datapath_tb.v
-    Info (12023): Found entity 1: datapath_tb File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath_tb.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file /users/alex/onedrive/desktop/elec374/elec374test/datapath.v
-    Info (12023): Found entity 1: datapath File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /users/alex/onedrive/desktop/elec374/elec374test/bidirectional_bus.v
-    Info (12023): Found entity 1: bidirectional_bus File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 1
+    Info (12023): Found entity 1: rotleft_gate File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/rotleft.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ripplecarryaddr.v
+    Info (12023): Found entity 1: ripplecarryaddr File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ripplecarryaddr.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file edgetrigreg.v
+    Info (12023): Found entity 1: edgetrigreg File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/edgetrigreg.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file datapath_tb.v
+    Info (12023): Found entity 1: datapath_tb File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath_tb.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file datapath.v
+    Info (12023): Found entity 1: datapath File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bidirectional_bus.v
+    Info (12023): Found entity 1: bidirectional_bus File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux2x1.v
-    Info (12023): Found entity 1: mux2x1 File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/mux2x1.v Line: 3
+    Info (12023): Found entity 1: mux2x1 File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/mux2x1.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file busmuxencoder.v
-    Info (12023): Found entity 1: BusMuxEncoder File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/BusMuxEncoder.v Line: 2
+    Info (12023): Found entity 1: BusMuxEncoder File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/BusMuxEncoder.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file and_gate.v
-    Info (12023): Found entity 1: and_gate File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/and_gate.v Line: 1
+    Info (12023): Found entity 1: and_gate File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_gate.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file or_gate.v
-    Info (12023): Found entity 1: or_gate File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/or_gate.v Line: 1
+    Info (12023): Found entity 1: or_gate File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/or_gate.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file not_gate.v
-    Info (12023): Found entity 1: not_gate File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/not_gate.v Line: 1
+    Info (12023): Found entity 1: not_gate File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/not_gate.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file and_tb.v
-    Info (12023): Found entity 1: and_tb File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/and_tb.v Line: 2
+    Info (12023): Found entity 1: and_tb File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: ALU File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 1
+    Info (12023): Found entity 1: ALU File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mdrreg.v
-    Info (12023): Found entity 1: MDRreg File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/MDRreg.v Line: 1
+    Info (12023): Found entity 1: MDRreg File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/MDRreg.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file neg_gate.v
-    Info (12023): Found entity 1: neg_gate File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/neg_gate.v Line: 1
+    Info (12023): Found entity 1: neg_gate File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/neg_gate.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file booths.v
-    Info (12023): Found entity 1: booths_gate File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/booths.v Line: 1
+    Info (12023): Found entity 1: booths_gate File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sub_gate.v
-    Info (12023): Found entity 1: sub_gate File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/sub_gate.v Line: 1
+    Info (12023): Found entity 1: sub_gate File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/sub_gate.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sub_tb.v
-    Info (12023): Found entity 1: sub_tb File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/sub_tb.v Line: 2
+    Info (12023): Found entity 1: sub_tb File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/sub_tb.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file not_tb.v
-    Info (12023): Found entity 1: not_tb File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/not_tb.v Line: 2
+    Info (12023): Found entity 1: not_tb File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/not_tb.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file neg_tb.v
-    Info (12023): Found entity 1: neg_tb File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/neg_tb.v Line: 2
+    Info (12023): Found entity 1: neg_tb File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/neg_tb.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file or_tb.v
-    Info (12023): Found entity 1: or_tb File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/or_tb.v Line: 2
+    Info (12023): Found entity 1: or_tb File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/or_tb.v Line: 2
 Warning (12019): Can't analyze file -- file ror.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file rol_tb.v
-    Info (12023): Found entity 1: rol_tb File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/rol_tb.v Line: 2
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(45): created implicit net for "Yout" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 45
-Warning (10236): Verilog HDL Implicit Net warning at datapath.v(45): created implicit net for "IRout" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 45
+    Info (12023): Found entity 1: rol_tb File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/rol_tb.v Line: 2
+Warning (10236): Verilog HDL Implicit Net warning at datapath.v(45): created implicit net for "Yout" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 45
+Warning (10236): Verilog HDL Implicit Net warning at datapath.v(45): created implicit net for "IRout" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 45
 Info (12127): Elaborating entity "datapath" for the top level hierarchy
-Info (12128): Elaborating entity "edgetrigreg" for hierarchy "edgetrigreg:R0" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 17
-Info (12128): Elaborating entity "MDRreg" for hierarchy "MDRreg:MDR" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 43
-Info (12128): Elaborating entity "mux2x1" for hierarchy "MDRreg:MDR|mux2x1:MDMux" File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/MDRreg.v Line: 7
-Info (12128): Elaborating entity "BusMuxEncoder" for hierarchy "BusMuxEncoder:bme" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 45
-Warning (10762): Verilog HDL Case Statement warning at BusMuxEncoder.v(8): can't check case statement for completeness because the case expression has too many possible states File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/BusMuxEncoder.v Line: 8
-Info (10264): Verilog HDL Case Statement information at BusMuxEncoder.v(8): all case item expressions in this case statement are onehot File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/BusMuxEncoder.v Line: 8
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 48
-Warning (10858): Verilog HDL warning at ALU.v(26): object not_result used but never assigned File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 26
-Warning (10240): Verilog HDL Always Construct warning at ALU.v(47): inferring latch(es) for variable "operation_resultLO", which holds its previous value in one or more paths through the always construct File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Warning (10240): Verilog HDL Always Construct warning at ALU.v(47): inferring latch(es) for variable "operation_resultHI", which holds its previous value in one or more paths through the always construct File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Warning (10030): Net "not_result" at ALU.v(26) has no driver or initial value, using a default initial value '0' File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 26
-Info (10041): Inferred latch for "operation_resultHI[0]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[1]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[2]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[3]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[4]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[5]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[6]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[7]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[8]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[9]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[10]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[11]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[12]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[13]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[14]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[15]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[16]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[17]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[18]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[19]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[20]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[21]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[22]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[23]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[24]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[25]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[26]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[27]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[28]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[29]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[30]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultHI[31]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[0]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[1]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[2]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[3]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[4]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[5]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[6]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[7]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[8]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[9]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[10]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[11]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[12]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[13]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[14]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[15]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[16]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[17]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[18]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[19]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[20]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[21]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[22]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[23]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[24]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[25]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[26]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[27]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[28]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[29]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[30]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (10041): Inferred latch for "operation_resultLO[31]" at ALU.v(47) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 47
-Info (12128): Elaborating entity "and_gate" for hierarchy "ALU:alu|and_gate:AG" File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 30
-Info (12128): Elaborating entity "or_gate" for hierarchy "ALU:alu|or_gate:OG" File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 31
-Info (12128): Elaborating entity "not_gate" for hierarchy "ALU:alu|not_gate:NG" File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 32
-Info (12128): Elaborating entity "rotright_gate" for hierarchy "ALU:alu|rotright_gate:ROTRG" File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 33
-Info (12128): Elaborating entity "rotleft_gate" for hierarchy "ALU:alu|rotleft_gate:ROTLG" File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 34
-Info (12128): Elaborating entity "shl_gate" for hierarchy "ALU:alu|shl_gate:SHLG" File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 35
-Info (12128): Elaborating entity "sra_gate" for hierarchy "ALU:alu|sra_gate:SHRAG" File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 36
-Info (12128): Elaborating entity "srl_gate" for hierarchy "ALU:alu|srl_gate:SHRG" File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 37
-Info (12128): Elaborating entity "neg_gate" for hierarchy "ALU:alu|neg_gate:NEGG" File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 38
-Info (12128): Elaborating entity "ripplecarryaddr" for hierarchy "ALU:alu|ripplecarryaddr:ADDG" File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 39
-Info (12128): Elaborating entity "booths_gate" for hierarchy "ALU:alu|booths_gate:MULG" File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 40
-Warning (10199): Verilog HDL Case Statement warning at booths.v(19): case item expression never matches the case expression File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/booths.v Line: 19
-Warning (10270): Verilog HDL Case Statement warning at booths.v(18): incomplete case statement has no default case item File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/booths.v Line: 18
-Info (10264): Verilog HDL Case Statement information at booths.v(18): all case item expressions in this case statement are onehot File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/booths.v Line: 18
-Warning (10230): Verilog HDL assignment warning at booths.v(29): truncated value with size 64 to match size of target (32) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/booths.v Line: 29
-Warning (10230): Verilog HDL assignment warning at booths.v(30): truncated value with size 64 to match size of target (32) File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/booths.v Line: 30
+Info (12128): Elaborating entity "edgetrigreg" for hierarchy "edgetrigreg:R0" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 17
+Info (12128): Elaborating entity "MDRreg" for hierarchy "MDRreg:MDR" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 43
+Info (12128): Elaborating entity "mux2x1" for hierarchy "MDRreg:MDR|mux2x1:MDMux" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/MDRreg.v Line: 7
+Info (12128): Elaborating entity "BusMuxEncoder" for hierarchy "BusMuxEncoder:bme" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 45
+Warning (10762): Verilog HDL Case Statement warning at BusMuxEncoder.v(8): can't check case statement for completeness because the case expression has too many possible states File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/BusMuxEncoder.v Line: 8
+Info (10264): Verilog HDL Case Statement information at BusMuxEncoder.v(8): all case item expressions in this case statement are onehot File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/BusMuxEncoder.v Line: 8
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 47
+Warning (10858): Verilog HDL warning at ALU.v(26): object not_result used but never assigned File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 26
+Warning (10240): Verilog HDL Always Construct warning at ALU.v(47): inferring latch(es) for variable "operation_resultLO", which holds its previous value in one or more paths through the always construct File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Warning (10240): Verilog HDL Always Construct warning at ALU.v(47): inferring latch(es) for variable "operation_resultHI", which holds its previous value in one or more paths through the always construct File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Warning (10030): Net "not_result" at ALU.v(26) has no driver or initial value, using a default initial value '0' File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 26
+Info (10041): Inferred latch for "operation_resultHI[0]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[1]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[2]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[3]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[4]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[5]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[6]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[7]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[8]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[9]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[10]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[11]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[12]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[13]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[14]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[15]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[16]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[17]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[18]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[19]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[20]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[21]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[22]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[23]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[24]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[25]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[26]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[27]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[28]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[29]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[30]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[31]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[0]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[1]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[2]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[3]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[4]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[5]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[6]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[7]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[8]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[9]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[10]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[11]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[12]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[13]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[14]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[15]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[16]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[17]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[18]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[19]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[20]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[21]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[22]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[23]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[24]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[25]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[26]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[27]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[28]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[29]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[30]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[31]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (12128): Elaborating entity "and_gate" for hierarchy "ALU:alu|and_gate:AG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 30
+Info (12128): Elaborating entity "or_gate" for hierarchy "ALU:alu|or_gate:OG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 31
+Info (12128): Elaborating entity "not_gate" for hierarchy "ALU:alu|not_gate:NG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 32
+Info (12128): Elaborating entity "rotright_gate" for hierarchy "ALU:alu|rotright_gate:ROTRG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 33
+Info (12128): Elaborating entity "rotleft_gate" for hierarchy "ALU:alu|rotleft_gate:ROTLG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 34
+Info (12128): Elaborating entity "shl_gate" for hierarchy "ALU:alu|shl_gate:SHLG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 35
+Info (12128): Elaborating entity "sra_gate" for hierarchy "ALU:alu|sra_gate:SHRAG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 36
+Info (12128): Elaborating entity "srl_gate" for hierarchy "ALU:alu|srl_gate:SHRG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 37
+Info (12128): Elaborating entity "neg_gate" for hierarchy "ALU:alu|neg_gate:NEGG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 38
+Info (12128): Elaborating entity "ripplecarryaddr" for hierarchy "ALU:alu|ripplecarryaddr:ADDG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 39
+Info (12128): Elaborating entity "booths_gate" for hierarchy "ALU:alu|booths_gate:MULG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 40
+Warning (10199): Verilog HDL Case Statement warning at booths.v(19): case item expression never matches the case expression File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths.v Line: 19
+Warning (10270): Verilog HDL Case Statement warning at booths.v(18): incomplete case statement has no default case item File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths.v Line: 18
+Info (10264): Verilog HDL Case Statement information at booths.v(18): all case item expressions in this case statement are onehot File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths.v Line: 18
+Warning (10230): Verilog HDL assignment warning at booths.v(29): truncated value with size 64 to match size of target (32) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths.v Line: 29
+Warning (10230): Verilog HDL assignment warning at booths.v(30): truncated value with size 64 to match size of target (32) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths.v Line: 30
 Warning (12125): Using design file div.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: div File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/div.v Line: 1
-Info (12128): Elaborating entity "div" for hierarchy "ALU:alu|div:DIVG" File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 41
-Info (12128): Elaborating entity "sub_gate" for hierarchy "ALU:alu|sub_gate:SUBG" File: C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/ALU.v Line: 42
-Info (12128): Elaborating entity "bidirectional_bus" for hierarchy "bidirectional_bus:bus" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 49
-Warning (10270): Verilog HDL Case Statement warning at bidirectional_bus.v(14): incomplete case statement has no default case item File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Warning (10240): Verilog HDL Always Construct warning at bidirectional_bus.v(14): inferring latch(es) for variable "q", which holds its previous value in one or more paths through the always construct File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[0]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[1]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[2]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[3]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[4]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[5]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[6]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[7]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[8]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[9]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[10]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[11]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[12]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[13]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[14]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[15]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[16]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[17]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[18]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[19]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[20]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[21]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[22]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[23]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[24]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[25]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[26]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[27]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[28]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[29]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[30]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
-Info (10041): Inferred latch for "q[31]" at bidirectional_bus.v(14) File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/bidirectional_bus.v Line: 14
+    Info (12023): Found entity 1: div File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/div.v Line: 1
+Info (12128): Elaborating entity "div" for hierarchy "ALU:alu|div:DIVG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 41
+Info (12128): Elaborating entity "sub_gate" for hierarchy "ALU:alu|sub_gate:SUBG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 42
+Info (12128): Elaborating entity "bidirectional_bus" for hierarchy "bidirectional_bus:bus" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 48
+Warning (10270): Verilog HDL Case Statement warning at bidirectional_bus.v(14): incomplete case statement has no default case item File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Warning (10240): Verilog HDL Always Construct warning at bidirectional_bus.v(14): inferring latch(es) for variable "q", which holds its previous value in one or more paths through the always construct File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[0]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[1]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[2]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[3]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[4]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[5]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[6]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[7]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[8]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[9]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[10]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[11]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[12]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[13]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[14]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[15]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[16]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[17]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[18]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[19]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[20]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[21]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[22]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[23]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[24]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[25]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[26]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[27]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[28]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[29]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[30]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
+Info (10041): Inferred latch for "q[31]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
 Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (144001): Generated suppressed messages file C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/output_files/elec374.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/output_files/elec374.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 85 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clear" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 3
-    Warning (15610): No output dependent on input pin "clock" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 3
-    Warning (15610): No output dependent on input pin "Mdatain[0]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[1]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[2]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[3]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[4]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[5]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[6]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[7]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[8]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[9]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[10]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[11]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[12]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[13]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[14]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[15]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[16]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[17]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[18]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[19]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[20]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[21]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[22]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[23]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[24]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[25]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[26]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[27]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[28]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[29]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[30]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "Mdatain[31]" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 4
-    Warning (15610): No output dependent on input pin "PCin" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "IRin" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "Yin" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "HIin" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "LOin" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "MDRin" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "ZHIin" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "ZLOin" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "Read" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "AND" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 5
-    Warning (15610): No output dependent on input pin "R0in" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "R1in" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "R2in" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "R3in" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "R4in" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "R5in" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "R6in" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "R7in" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "R8in" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "R9in" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "R10in" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "R11in" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "R12in" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "R13in" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "R14in" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "R15in" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 6
-    Warning (15610): No output dependent on input pin "HIout" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 8
-    Warning (15610): No output dependent on input pin "LOout" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 8
-    Warning (15610): No output dependent on input pin "ZHighout" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 8
-    Warning (15610): No output dependent on input pin "Zlowout" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 8
-    Warning (15610): No output dependent on input pin "PCout" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 8
-    Warning (15610): No output dependent on input pin "MDRout" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 8
-    Warning (15610): No output dependent on input pin "InPortout" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 8
-    Warning (15610): No output dependent on input pin "Cout" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 8
-    Warning (15610): No output dependent on input pin "Zhighout" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 8
-    Warning (15610): No output dependent on input pin "R0out" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 9
-    Warning (15610): No output dependent on input pin "R1out" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 9
-    Warning (15610): No output dependent on input pin "R2out" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 9
-    Warning (15610): No output dependent on input pin "R3out" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 9
-    Warning (15610): No output dependent on input pin "R4out" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 9
-    Warning (15610): No output dependent on input pin "R5out" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 9
-    Warning (15610): No output dependent on input pin "R6out" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 9
-    Warning (15610): No output dependent on input pin "R7out" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 9
-    Warning (15610): No output dependent on input pin "R8out" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 9
-    Warning (15610): No output dependent on input pin "R9out" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 9
-    Warning (15610): No output dependent on input pin "R10out" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 9
-    Warning (15610): No output dependent on input pin "R11out" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 9
-    Warning (15610): No output dependent on input pin "R12out" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 9
-    Warning (15610): No output dependent on input pin "R13out" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 9
-    Warning (15610): No output dependent on input pin "R14out" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 9
-    Warning (15610): No output dependent on input pin "R15out" File: C:/Users/alex/OneDrive/Desktop/elec374/elec374test/datapath.v Line: 10
-Info (21057): Implemented 85 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 85 input pins
+Warning (21074): Design contains 84 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clear" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 3
+    Warning (15610): No output dependent on input pin "clock" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 3
+    Warning (15610): No output dependent on input pin "Mdatain[0]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[1]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[2]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[3]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[4]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[5]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[6]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[7]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[8]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[9]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[10]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[11]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[12]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[13]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[14]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[15]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[16]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[17]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[18]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[19]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[20]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[21]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[22]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[23]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[24]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[25]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[26]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[27]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[28]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[29]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[30]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "Mdatain[31]" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 4
+    Warning (15610): No output dependent on input pin "PCin" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 5
+    Warning (15610): No output dependent on input pin "IRin" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 5
+    Warning (15610): No output dependent on input pin "Yin" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 5
+    Warning (15610): No output dependent on input pin "HIin" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 5
+    Warning (15610): No output dependent on input pin "LOin" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 5
+    Warning (15610): No output dependent on input pin "MDRin" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 5
+    Warning (15610): No output dependent on input pin "ZHIin" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 5
+    Warning (15610): No output dependent on input pin "ZLOin" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 5
+    Warning (15610): No output dependent on input pin "Read" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 5
+    Warning (15610): No output dependent on input pin "AND" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 5
+    Warning (15610): No output dependent on input pin "R0in" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 6
+    Warning (15610): No output dependent on input pin "R1in" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 6
+    Warning (15610): No output dependent on input pin "R2in" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 6
+    Warning (15610): No output dependent on input pin "R3in" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 6
+    Warning (15610): No output dependent on input pin "R4in" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 6
+    Warning (15610): No output dependent on input pin "R5in" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 6
+    Warning (15610): No output dependent on input pin "R6in" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 6
+    Warning (15610): No output dependent on input pin "R7in" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 6
+    Warning (15610): No output dependent on input pin "R8in" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 6
+    Warning (15610): No output dependent on input pin "R9in" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 6
+    Warning (15610): No output dependent on input pin "R10in" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 6
+    Warning (15610): No output dependent on input pin "R11in" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 6
+    Warning (15610): No output dependent on input pin "R12in" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 6
+    Warning (15610): No output dependent on input pin "R13in" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 6
+    Warning (15610): No output dependent on input pin "R14in" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 6
+    Warning (15610): No output dependent on input pin "R15in" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 6
+    Warning (15610): No output dependent on input pin "HIout" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 8
+    Warning (15610): No output dependent on input pin "LOout" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 8
+    Warning (15610): No output dependent on input pin "ZHighout" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 8
+    Warning (15610): No output dependent on input pin "Zlowout" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 8
+    Warning (15610): No output dependent on input pin "PCout" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 8
+    Warning (15610): No output dependent on input pin "MDRout" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 8
+    Warning (15610): No output dependent on input pin "InPortout" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 8
+    Warning (15610): No output dependent on input pin "Cout" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 8
+    Warning (15610): No output dependent on input pin "R0out" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 9
+    Warning (15610): No output dependent on input pin "R1out" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 9
+    Warning (15610): No output dependent on input pin "R2out" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 9
+    Warning (15610): No output dependent on input pin "R3out" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 9
+    Warning (15610): No output dependent on input pin "R4out" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 9
+    Warning (15610): No output dependent on input pin "R5out" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 9
+    Warning (15610): No output dependent on input pin "R6out" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 9
+    Warning (15610): No output dependent on input pin "R7out" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 9
+    Warning (15610): No output dependent on input pin "R8out" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 9
+    Warning (15610): No output dependent on input pin "R9out" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 9
+    Warning (15610): No output dependent on input pin "R10out" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 9
+    Warning (15610): No output dependent on input pin "R11out" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 9
+    Warning (15610): No output dependent on input pin "R12out" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 9
+    Warning (15610): No output dependent on input pin "R13out" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 9
+    Warning (15610): No output dependent on input pin "R14out" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 9
+    Warning (15610): No output dependent on input pin "R15out" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 10
+Info (21057): Implemented 84 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 84 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 103 warnings
-    Info: Peak virtual memory: 4814 megabytes
-    Info: Processing ended: Thu Mar 07 10:39:16 2024
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:11
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 102 warnings
+    Info: Peak virtual memory: 4811 megabytes
+    Info: Processing ended: Thu Mar 07 11:35:29 2024
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:22
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/alex/OneDrive/Desktop/elec374/siyung/elec374test/output_files/elec374.map.smsg.
+The suppressed messages can be found in C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/output_files/elec374.map.smsg.
 
 

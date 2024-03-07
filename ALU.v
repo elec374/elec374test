@@ -46,17 +46,60 @@ reg [31:0] operation_resultLO, operation_resultHI;
 always @(*) begin
     if (exec) begin
         casex (opcode)
-            ADD: operation_resultLO  = add_result;
-            SUB: operation_resultLO  = sub_result;
-            AND: operation_resultLO  = and_result;
-            OR: operation_resultLO  = or_result;
-            NEG: operation_resultLO  = neg_result;
-            NOT: operation_resultLO  = not_result;
-            SHR: operation_resultLO  = shr_result;
-            SHRA: operation_resultLO  = shra_result;
-            SHL: operation_resultLO  = shl_result;
-            ROR: operation_resultLO  = ror_result;
-            ROL: operation_resultLO  = rol_result;
+            ADD:begin
+					operation_resultLO  = add_result;
+					operation_resultHI = 32'b0;
+				end 
+				
+            SUB:begin 
+					operation_resultLO  = sub_result;
+					operation_resultHI = 32'b0;
+				end 
+				
+            AND:begin 
+					operation_resultLO  = and_result;
+					operation_resultHI = 32'b0;
+				end 
+				
+            OR:begin
+					operation_resultLO  = or_result;
+					operation_resultHI = 32'b0;
+				end 
+				
+            NEG:begin 
+					operation_resultLO  = neg_result;
+					operation_resultHI = 32'b0;
+				end 
+				
+            NOT:begin
+					operation_resultLO  = not_result;
+					operation_resultHI = 32'b0;
+				end 
+				
+            SHR:begin
+					operation_resultLO  = shr_result;
+					operation_resultHI = 32'b0;
+				end 
+				
+            SHRA:begin
+					operation_resultLO  = shra_result;
+					operation_resultHI = 32'b0;
+				end 
+				
+            SHL:begin 
+					operation_resultLO  = shl_result;
+					operation_resultHI = 32'b0;
+				end 
+				
+            ROR:begin
+					operation_resultLO  = ror_result;
+					operation_resultHI = 32'b0;
+				end 
+				
+            ROL:begin
+					operation_resultLO  = rol_result;
+					operation_resultHI = 32'b0;
+				end 
 				
             MUL:begin
 					operation_resultLO = mul_result;
@@ -67,7 +110,11 @@ always @(*) begin
 					operation_resultLO = div_result;
 					operation_resultHI = rem_result;
 				end
-            default: operation_resultLO = 32'b0; 
+				
+            default:begin
+					operation_resultLO = 32'b0; 
+					operation_resultHI = 32'b0;
+				end
         endcase
     end
 end
