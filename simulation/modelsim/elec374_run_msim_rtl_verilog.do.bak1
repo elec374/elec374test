@@ -23,8 +23,6 @@ vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/el
 vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/MDRreg.v}
 vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/neg_gate.v}
 vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths.v}
-vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/sub_gate.v}
-vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/div.v}
 
 vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v}
 

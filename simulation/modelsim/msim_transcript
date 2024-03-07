@@ -11,199 +11,219 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/srl.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:26:28 on Mar 07,2024
+# Start time: 09:41:03 on Mar 07,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test" C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/srl.v 
 # -- Compiling module srl_gate
 # 
 # Top level modules:
 # 	srl_gate
-# End time: 00:26:28 on Mar 07,2024, Elapsed time: 0:00:00
+# End time: 09:41:03 on Mar 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/sra.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:26:28 on Mar 07,2024
+# Start time: 09:41:03 on Mar 07,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test" C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/sra.v 
 # -- Compiling module sra_gate
 # 
 # Top level modules:
 # 	sra_gate
-# End time: 00:26:28 on Mar 07,2024, Elapsed time: 0:00:00
+# End time: 09:41:04 on Mar 07,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/shl.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:26:28 on Mar 07,2024
+# Start time: 09:41:04 on Mar 07,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test" C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/shl.v 
 # -- Compiling module shl_gate
 # 
 # Top level modules:
 # 	shl_gate
-# End time: 00:26:28 on Mar 07,2024, Elapsed time: 0:00:00
+# End time: 09:41:04 on Mar 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/rotright.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:26:28 on Mar 07,2024
+# Start time: 09:41:04 on Mar 07,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test" C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/rotright.v 
 # -- Compiling module rotright_gate
 # 
 # Top level modules:
 # 	rotright_gate
-# End time: 00:26:29 on Mar 07,2024, Elapsed time: 0:00:01
+# End time: 09:41:04 on Mar 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/rotleft.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:26:29 on Mar 07,2024
+# Start time: 09:41:04 on Mar 07,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test" C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/rotleft.v 
 # -- Compiling module rotleft_gate
 # 
 # Top level modules:
 # 	rotleft_gate
-# End time: 00:26:29 on Mar 07,2024, Elapsed time: 0:00:00
+# End time: 09:41:04 on Mar 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ripplecarryaddr.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:26:29 on Mar 07,2024
+# Start time: 09:41:04 on Mar 07,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test" C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ripplecarryaddr.v 
 # -- Compiling module ripplecarryaddr
 # 
 # Top level modules:
 # 	ripplecarryaddr
-# End time: 00:26:29 on Mar 07,2024, Elapsed time: 0:00:00
+# End time: 09:41:04 on Mar 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/edgetrigreg.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:26:29 on Mar 07,2024
+# Start time: 09:41:04 on Mar 07,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test" C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/edgetrigreg.v 
 # -- Compiling module edgetrigreg
 # 
 # Top level modules:
 # 	edgetrigreg
-# End time: 00:26:29 on Mar 07,2024, Elapsed time: 0:00:00
+# End time: 09:41:05 on Mar 07,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:26:29 on Mar 07,2024
+# Start time: 09:41:05 on Mar 07,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test" C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v 
 # -- Compiling module datapath
 # 
 # Top level modules:
 # 	datapath
-# End time: 00:26:30 on Mar 07,2024, Elapsed time: 0:00:01
+# End time: 09:41:05 on Mar 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:26:30 on Mar 07,2024
+# Start time: 09:41:05 on Mar 07,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test" C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v 
 # -- Compiling module bidirectional_bus
 # 
 # Top level modules:
 # 	bidirectional_bus
-# End time: 00:26:30 on Mar 07,2024, Elapsed time: 0:00:00
+# End time: 09:41:05 on Mar 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/mux2x1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:26:30 on Mar 07,2024
+# Start time: 09:41:05 on Mar 07,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test" C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/mux2x1.v 
 # -- Compiling module mux2x1
 # 
 # Top level modules:
 # 	mux2x1
-# End time: 00:26:30 on Mar 07,2024, Elapsed time: 0:00:00
+# End time: 09:41:05 on Mar 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/BusMuxEncoder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:26:30 on Mar 07,2024
+# Start time: 09:41:05 on Mar 07,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test" C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/BusMuxEncoder.v 
 # -- Compiling module BusMuxEncoder
 # 
 # Top level modules:
 # 	BusMuxEncoder
-# End time: 00:26:30 on Mar 07,2024, Elapsed time: 0:00:00
+# End time: 09:41:05 on Mar 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_gate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:26:30 on Mar 07,2024
+# Start time: 09:41:05 on Mar 07,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test" C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_gate.v 
 # -- Compiling module and_gate
 # 
 # Top level modules:
 # 	and_gate
-# End time: 00:26:30 on Mar 07,2024, Elapsed time: 0:00:00
+# End time: 09:41:06 on Mar 07,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/or_gate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:26:30 on Mar 07,2024
+# Start time: 09:41:06 on Mar 07,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test" C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/or_gate.v 
 # -- Compiling module or_gate
 # 
 # Top level modules:
 # 	or_gate
-# End time: 00:26:31 on Mar 07,2024, Elapsed time: 0:00:01
+# End time: 09:41:06 on Mar 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/not_gate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:26:31 on Mar 07,2024
+# Start time: 09:41:06 on Mar 07,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test" C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/not_gate.v 
 # -- Compiling module not_gate
 # 
 # Top level modules:
 # 	not_gate
-# End time: 00:26:31 on Mar 07,2024, Elapsed time: 0:00:00
+# End time: 09:41:06 on Mar 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:26:31 on Mar 07,2024
+# Start time: 09:41:06 on Mar 07,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test" C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 00:26:31 on Mar 07,2024, Elapsed time: 0:00:00
+# End time: 09:41:06 on Mar 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/MDRreg.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:26:31 on Mar 07,2024
+# Start time: 09:41:06 on Mar 07,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test" C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/MDRreg.v 
 # -- Compiling module MDRreg
 # 
 # Top level modules:
 # 	MDRreg
-# End time: 00:26:31 on Mar 07,2024, Elapsed time: 0:00:00
+# End time: 09:41:06 on Mar 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/neg_gate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:26:31 on Mar 07,2024
+# Start time: 09:41:06 on Mar 07,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test" C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/neg_gate.v 
 # -- Compiling module neg_gate
 # 
 # Top level modules:
 # 	neg_gate
-# End time: 00:26:31 on Mar 07,2024, Elapsed time: 0:00:00
+# End time: 09:41:07 on Mar 07,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:26:31 on Mar 07,2024
+# Start time: 09:41:07 on Mar 07,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test" C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths.v 
 # -- Compiling module booths_gate
 # 
 # Top level modules:
 # 	booths_gate
-# End time: 00:26:32 on Mar 07,2024, Elapsed time: 0:00:01
+# End time: 09:41:07 on Mar 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/sub_gate.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:41:07 on Mar 07,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test" C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/sub_gate.v 
+# -- Compiling module sub_gate
+# 
+# Top level modules:
+# 	sub_gate
+# End time: 09:41:07 on Mar 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/div.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:41:07 on Mar 07,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test" C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/div.v 
+# -- Compiling module div
+# 
+# Top level modules:
+# 	div
+# End time: 09:41:07 on Mar 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:26:32 on Mar 07,2024
+# Start time: 09:41:07 on Mar 07,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test" C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v 
 # -- Compiling module and_tb
 # 
 # Top level modules:
 # 	and_tb
-# End time: 00:26:32 on Mar 07,2024, Elapsed time: 0:00:00
+# End time: 09:41:07 on Mar 07,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  and_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" and_tb 
-# Start time: 00:26:32 on Mar 07,2024
+# Start time: 09:41:07 on Mar 07,2024
 # Loading work.and_tb
 # Loading work.datapath
 # Loading work.edgetrigreg
@@ -222,6 +242,8 @@
 # Loading work.neg_gate
 # Loading work.ripplecarryaddr
 # Loading work.booths_gate
+# Loading work.div
+# Loading work.sub_gate
 # Loading work.bidirectional_bus
 # ** Warning: (vsim-3017) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Too few port connections. Expected 53, found 16.
 #    Time: 0 ps  Iteration: 0  Instance: /and_tb/DUT File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v
@@ -262,13 +284,21 @@
 # ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R13out'.
 # ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R14out'.
 # ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R15out'.
-# ** Warning: (vsim-3015) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v(46): [PCDPC] - Port size (32) does not match connection size (26) for port 'DataIn'. The port definition is at: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/BusMuxEncoder.v(3).
+# ** Warning: (vsim-3015) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v(40): [PCDPC] - Port size (1) does not match connection size (32) for port 'enable'. The port definition is at: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/edgetrigreg.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /and_tb/DUT/ZHI File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/edgetrigreg.v
+# ** Warning: (vsim-3015) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v(40): [PCDPC] - Port size (32) does not match connection size (1) for port 'BusMuxOut'. The port definition is at: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/edgetrigreg.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /and_tb/DUT/ZHI File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/edgetrigreg.v
+# ** Warning: (vsim-3015) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v(41): [PCDPC] - Port size (1) does not match connection size (32) for port 'enable'. The port definition is at: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/edgetrigreg.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /and_tb/DUT/ZLO File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/edgetrigreg.v
+# ** Warning: (vsim-3015) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v(41): [PCDPC] - Port size (32) does not match connection size (1) for port 'BusMuxOut'. The port definition is at: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/edgetrigreg.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /and_tb/DUT/ZLO File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/edgetrigreg.v
+# ** Warning: (vsim-3015) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v(45): [PCDPC] - Port size (32) does not match connection size (26) for port 'DataIn'. The port definition is at: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/BusMuxEncoder.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /and_tb/DUT/bme File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/BusMuxEncoder.v
-# ** Warning: (vsim-3015) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v(49): [PCDPC] - Port size (4) does not match connection size (32) for port 'opcode'. The port definition is at: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v(2).
+# ** Warning: (vsim-3015) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v(47): [PCDPC] - Port size (4) does not match connection size (32) for port 'opcode'. The port definition is at: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v(2).
 #    Time: 0 ps  Iteration: 0  Instance: /and_tb/DUT/alu File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v
-# ** Warning: (vsim-3017) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v(31): [TFMPC] - Too few port connections. Expected 2, found 1.
+# ** Warning: (vsim-3017) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v(32): [TFMPC] - Too few port connections. Expected 2, found 1.
 #    Time: 0 ps  Iteration: 0  Instance: /and_tb/DUT/alu/NG File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/not_gate.v
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v(31): [TFMPC] - Missing connection for port 'notA'.
+# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v(32): [TFMPC] - Missing connection for port 'notA'.
 # 
 # add wave *
 # view structure
@@ -276,54 +306,3 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 500 ns
-add wave -position end sim:/and_tb/DUT/alu/*
-restart
-# ** Warning: (vsim-3017) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Too few port connections. Expected 53, found 16.
-#    Time: 0 ps  Iteration: 0  Instance: /and_tb/DUT File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'PCin'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'HIin'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'LOin'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'ZHIin'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'ZLOin'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R0in'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R4in'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R5in'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R6in'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R7in'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R8in'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R9in'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R10in'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R11in'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R12in'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R13in'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R14in'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R15in'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'HIout'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'LOout'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'ZHighout'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'InPortout'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'Cout'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R0out'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R1out'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R4out'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R5out'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R6out'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R7out'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R8out'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R9out'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R10out'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R11out'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R12out'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R13out'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R14out'.
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v(17): [TFMPC] - Missing connection for port 'R15out'.
-# ** Warning: (vsim-3015) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v(46): [PCDPC] - Port size (32) does not match connection size (26) for port 'DataIn'. The port definition is at: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/BusMuxEncoder.v(3).
-#    Time: 0 ps  Iteration: 0  Instance: /and_tb/DUT/bme File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/BusMuxEncoder.v
-# ** Warning: (vsim-3015) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v(49): [PCDPC] - Port size (4) does not match connection size (32) for port 'opcode'. The port definition is at: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v(2).
-#    Time: 0 ps  Iteration: 0  Instance: /and_tb/DUT/alu File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v
-# ** Warning: (vsim-3017) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v(31): [TFMPC] - Too few port connections. Expected 2, found 1.
-#    Time: 0 ps  Iteration: 0  Instance: /and_tb/DUT/alu/NG File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/not_gate.v
-# ** Warning: (vsim-3722) C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v(31): [TFMPC] - Missing connection for port 'notA'.
-run 500ns
-# End time: 00:32:50 on Mar 07,2024, Elapsed time: 0:06:18
-# Errors: 0, Warnings: 84

@@ -3,7 +3,8 @@ module ALU (
 	 input wire exec,
     input wire [31:0] operand_A,      // First input operand
     input wire [31:0] operand_B,      // Second input operand
-    output wire [63:0] result          // Output result
+    output wire [31:0] result,          // Output result
+	 output wire [31:0] HI
 );
 
 // Parameter definitions for opcode
@@ -23,44 +24,55 @@ parameter DIV  = 4'b1100;
 
 
 wire [31:0] add_result, sub_result, and_result, or_result, neg_result, not_result, shr_result, shra_result, shl_result, ror_result, rol_result;
-wire [63:0] mul_result;
-wire [31:0] div_result;
+wire [31:0] mul_result, mul_hi_result;
+wire [31:0] div_result, rem_result;
 
 and_gate AG(.A(operand_A), .B(operand_B), .C(and_result));
 or_gate OG(.A(operand_A), .B(operand_B), .C(or_result));
 not_gate NG(.A(operand_A) );
-rotright_gate ROTRG(.A(operand_A), .C(ror_result));
-rotleft_gate ROTLG(.A(operand_A), .C(rol_result));
-shl_gate SHLG(.A(operand_A), .C(shl_result));
-sra_gate SHRAG(.A(operand_A), .C(shra_result));
-srl_gate SHRG(.A(operand_A),.C(shr_result));
+rotright_gate ROTRG(.A(operand_A), .B(operand_B[4:0]), .out(ror_result));
+rotleft_gate ROTLG(.A(operand_A), .B(operand_B[4:0]), .out(rol_result));
+shl_gate SHLG(.A(operand_A), .B(operand_B[4:0]), .C(shl_result));
+sra_gate SHRAG(.A(operand_A), .B(operand_B[4:0]), .C(shra_result));
+srl_gate SHRG(.A(operand_A), .B(operand_B[4:0]), .C(shr_result));
 neg_gate NEGG(.A(operand_A), .C(neg_result));
 ripplecarryaddr ADDG(.A(operand_A), .B(operand_B), .Result(add_result));
-booths_gate MULG(.multiplicand(operand_A), .multiplier(operand_B), .product(mul_result));
+booths_gate MULG(.multiplicand(operand_A), .multiplier(operand_B), .outLO(mul_result), .outHI(mul_hi_result));
+div DIVG(.dividend(operand_A),.divisor(operand_B),.quotient(div_result), .remainder(rem_result));
+sub_gate SUBG(.A(operand_A), .B(operand_B), .Result(sub_result));
 
-reg [63:0] operation_result;
+reg [31:0] operation_resultLO, operation_resultHI;
+
 always @(*) begin
     if (exec) begin
         casex (opcode)
-            ADD: operation_result = {32'b0, add_result};
-            //SUB: operation_result = {32'b0, sub_result};
-            AND: operation_result = {32'b0, and_result};
-            OR: operation_result = {32'b0, or_result};
-            NEG: operation_result = {32'b0, neg_result};
-            NOT: operation_result = {32'b0, not_result};
-            SHR: operation_result = {32'b0, shr_result};
-            SHRA: operation_result = {32'b0, shra_result};
-            SHL: operation_result = {32'b0, shl_result};
-            ROR: operation_result = {32'b0, ror_result};
-            ROL: operation_result = {32'b0, rol_result};
-            MUL: operation_result = mul_result;
-            // DIV and other operations can be added here, following the same pattern
-
-            default: operation_result = 64'b0; 
+            ADD: operation_resultLO  = add_result;
+            SUB: operation_resultLO  = sub_result;
+            AND: operation_resultLO  = and_result;
+            OR: operation_resultLO  = or_result;
+            NEG: operation_resultLO  = neg_result;
+            NOT: operation_resultLO  = not_result;
+            SHR: operation_resultLO  = shr_result;
+            SHRA: operation_resultLO  = shra_result;
+            SHL: operation_resultLO  = shl_result;
+            ROR: operation_resultLO  = ror_result;
+            ROL: operation_resultLO  = rol_result;
+				
+            MUL:begin
+					operation_resultLO = mul_result;
+					operation_resultHI = mul_hi_result;
+				end
+				
+				DIV:begin
+					operation_resultLO = div_result;
+					operation_resultHI = rem_result;
+				end
+            default: operation_resultLO = 32'b0; 
         endcase
     end
 end
 
-assign result = operation_result;
+assign result = operation_resultLO;
+assign HI = operation_resultHI;
 
 endmodule 

@@ -1,9 +1,10 @@
 module booths_gate(
     input [31:0] multiplicand,
     input [31:0] multiplier,
-    output [63:0] product
+    output [31:0] outLO,
+	 output [31:0] outHI
 );
-    reg [63:0] m, q, acc;
+    reg [63:0] m, q, acc, product;
     reg q_1;
     integer i;
 
@@ -17,7 +18,6 @@ module booths_gate(
             case ({q[0], q_1})
                 2'b01: acc = acc + m;  // If 01, add M to A
                 2'b10: acc = acc - m;  // If 10, subtract M from A
-                default: ;             // If 00 or 11, do nothing
             endcase
 
             q_1 = q[0];
@@ -26,5 +26,7 @@ module booths_gate(
         end
     end
 
-    assign product = {acc, q}; // The final product is the combination of acc and q
+    assign outHI = acc; // The final product is the combination of acc and q
+	 assign outLO = q; // The final product is the combination of acc and q
+
 endmodule 
