@@ -55,7 +55,7 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH and_tb -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH or_tb -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME datapath_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id datapath_tb
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id datapath_tb
@@ -64,8 +64,6 @@ set_global_assignment -name EDA_TEST_BENCH_NAME and_tb -section_id eda_simulatio
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id and_tb
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id and_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME and_tb -section_id and_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE datapath_tb.v -section_id datapath_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE and_tb.v -section_id and_tb
 set_global_assignment -name VERILOG_FILE srl.v
 set_global_assignment -name VERILOG_FILE sra.v
 set_global_assignment -name VERILOG_FILE shl.v
@@ -87,4 +85,22 @@ set_global_assignment -name VERILOG_FILE MDRreg.v
 set_global_assignment -name VERILOG_FILE neg_gate.v
 set_global_assignment -name VERILOG_FILE booths.v
 set_global_assignment -name VERILOG_FILE sub_gate.v
+set_global_assignment -name VERILOG_FILE sub_tb.v
+set_global_assignment -name VERILOG_FILE not_tb.v
+set_global_assignment -name EDA_TEST_BENCH_NAME not_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id not_tb
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id not_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME not_tb -section_id not_tb
+set_global_assignment -name VERILOG_FILE neg_tb.v
+set_global_assignment -name VERILOG_FILE or_tb.v
+set_global_assignment -name VERILOG_FILE ror.v
+set_global_assignment -name VERILOG_FILE rol_tb.v
+set_global_assignment -name EDA_TEST_BENCH_NAME or_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id or_tb
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "500 ns" -section_id or_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME or_tb -section_id or_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE or_tb.v -section_id or_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE datapath_tb.v -section_id datapath_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE and_tb.v -section_id and_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE not_tb.v -section_id not_tb
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

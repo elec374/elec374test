@@ -67,6 +67,7 @@ PCout => PCout.IN1
 MDRout => MDRout.IN1
 InPortout => InPortout.IN1
 Cout => Cout.IN1
+Zhighout => ~NO_FANOUT~
 R0out => R0out.IN1
 R1out => R1out.IN1
 R2out => R2out.IN1

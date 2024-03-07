@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Thu Mar 07 09:40:43 2024
+Analysis & Synthesis Status : Successful - Thu Mar 07 10:39:16 2024
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : elec374
 Top-level Entity Name : datapath
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 0
-Total pins : 84
+Total pins : 85
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

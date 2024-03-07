@@ -1,7 +1,7 @@
 `timescale 1ns/10ps
 module neg_tb;
 
-reg Zlowout, MDRout, R6out, R7out;
+reg Zlowout, MDRout, R6out, R7out, MARin, IncPc, Zin, PCin;
 reg MDRin, Yin, PCout, IRin;
 reg Read, AND, R1in, R6in, R7in;
 reg clock;
@@ -54,6 +54,8 @@ always @(Present_state) // do the required job in each state
 				MDRin <= 0; Yin <= 0;
 				Read <= 0; AND <= 0;
 				R1in <= 0; R6in <= 0; R7in <= 0; Mdatain <= 32'h00000000;
+								MARin <= 0; IncPc<=0; Zin<=0; PCin<=0;
+
 		end
 				Reg_load1a: begin
 				Mdatain <= 32'h00000012;
@@ -85,10 +87,10 @@ always @(Present_state) // do the required job in each state
 				#20 MDRout <= 0; R1in <= 0; // initialize R1 with the value $18
 		end
 				T0: begin 
-				PCout <= 1;
+				PCout <= 1; IncPc<= 1;Zin<= 1;MARin<= 1;
 		end
 				T1: begin
-				PCout <= 0;
+				PCout <= 0;IncPc<= 0;Zin<= 0;MARin<= 0;
 				Zlowout <= 1; Read <= 1; MDRin <= 1;
 				Mdatain <= 32'b0100; // opcode for “and R1, R6, R7”
 		end

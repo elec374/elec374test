@@ -1,7 +1,7 @@
 `timescale 1ns/10ps
 module div_tb;
 
-reg Zlowout, Zhighout, MDRout, R4out, R5out;
+reg Zlowout, Zhighout, MDRout, R4out, R5out,MARin, IncPc, Zin, PCin;
 reg MDRin, Yin, PCout, IRin;
 reg Read, AND,  R4in, R5in;
 reg LOin, HIin;
@@ -58,6 +58,8 @@ always @(Present_state) // do the required job in each state
 				Read <= 0; AND <= 0;
 				R4in <= 0; R5in <= 0; Mdatain <= 32'h00000000;
 				HIin <=0; LOin <=0;
+								MARin <= 0; IncPc<=0; Zin<=0; PCin<=0;
+
 		end
 				Reg_load1a: begin
 				Mdatain <= 32'h00000012;
