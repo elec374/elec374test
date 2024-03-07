@@ -103,7 +103,7 @@ always @(Present_state) // do the required job in each state
 				T4: begin
 				R2out <= 0; Yin <= 0;
 				R3out <= 1; 
-				#10 AND <= 1;
+				AND <= 1;
 		end
 				T5: begin
 				R3out <= 0; AND <= 0; 

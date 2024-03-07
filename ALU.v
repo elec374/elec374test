@@ -13,12 +13,18 @@ parameter AND = 4'b0010;
 parameter OR  = 4'b0011;
 parameter XOR = 4'b0100;
 
-assign result = exec ?((opcode == ADD) ? operand_A + operand_B :
-                (opcode == SUB) ? operand_A - operand_B :
-                (opcode == AND) ? operand_A & operand_B :
-                (opcode == OR)  ? operand_A | operand_B :
-                (opcode == XOR) ? operand_A ^ operand_B :
-                32'b0):
-                32'b0; // Default to 0 for unknown opcodes
+reg [31:0] temp_result;
 
-endmodule
+always @(*) begin
+    if (exec) begin
+        temp_result = ((opcode == ADD) ? operand_A + operand_B :
+                       (opcode == SUB) ? operand_A - operand_B :
+                       (opcode == AND) ? operand_A & operand_B :
+                       (opcode == OR)  ? operand_A | operand_B :
+                       (opcode == XOR) ? operand_A ^ operand_B :
+                       32'b0);
+    end 
+end
+
+assign result = temp_result;
+endmodule 
