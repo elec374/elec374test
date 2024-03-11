@@ -1,5 +1,5 @@
 Analysis & Synthesis report for elec374
-Mon Mar 11 13:25:10 2024
+Mon Mar 11 13:51:24 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -42,10 +42,12 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
  34. Port Connectivity Checks: "ALU:alu|not_gate:NG"
  35. Port Connectivity Checks: "ALU:alu"
  36. Port Connectivity Checks: "BusMuxEncoder:bme"
- 37. Post-Synthesis Netlist Statistics for Top Partition
- 38. Elapsed Time Per Partition
- 39. Analysis & Synthesis Messages
- 40. Analysis & Synthesis Suppressed Messages
+ 37. Port Connectivity Checks: "edgetrigreg:ZLO"
+ 38. Port Connectivity Checks: "edgetrigreg:ZHI"
+ 39. Post-Synthesis Netlist Statistics for Top Partition
+ 40. Elapsed Time Per Partition
+ 41. Analysis & Synthesis Messages
+ 42. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -71,7 +73,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Mar 11 13:25:10 2024           ;
+; Analysis & Synthesis Status     ; Successful - Mon Mar 11 13:51:24 2024           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; elec374                                         ;
 ; Top-level Entity Name           ; datapath                                        ;
@@ -593,14 +595,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU:alu"                                                                                                                                                                             ;
-+--------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                                                                                                                            ;
-+--------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; opcode ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; result ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
-+--------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ALU:alu"                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; opcode ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -610,6 +611,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 ; DataIn ; Input ; Warning  ; Input port expression (26 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "DataIn[31..26]" will be connected to GND. ;
 +--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "edgetrigreg:ZLO"                                                                                                                                                                        ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                                                            ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; enable     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; enable[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "edgetrigreg:ZHI"                                                                                                                                                                        ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                                                            ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; enable     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; enable[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -639,7 +660,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Mon Mar 11 13:24:54 2024
+    Info: Processing started: Mon Mar 11 13:51:09 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off elec374 -c elec374
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -710,6 +731,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file shl_tb.
     Info (12023): Found entity 1: shl_tb File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/shl_tb.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file booths_tb.v
     Info (12023): Found entity 1: booths_tb File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths_tb.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file zreg.v
+    Info (12023): Found entity 1: alu_edgetrigreg File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/zreg.v Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at div_tb.v(19): created implicit net for "R1in" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/div_tb.v Line: 19
 Warning (10236): Verilog HDL Implicit Net warning at datapath.v(46): created implicit net for "Yout" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 46
 Warning (10236): Verilog HDL Implicit Net warning at datapath.v(46): created implicit net for "IRout" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 46
@@ -844,7 +867,7 @@ Info (10041): Inferred latch for "q[28]" at bidirectional_bus.v(14) File: C:/Use
 Info (10041): Inferred latch for "q[29]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
 Info (10041): Inferred latch for "q[30]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
 Info (10041): Inferred latch for "q[31]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
-Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/output_files/elec374.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -937,9 +960,9 @@ Info (21057): Implemented 84 device resources after synthesis - the final resour
     Info (21058): Implemented 84 input pins
     Info (21059): Implemented 0 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 104 warnings
-    Info: Peak virtual memory: 4810 megabytes
-    Info: Processing ended: Mon Mar 11 13:25:10 2024
-    Info: Elapsed time: 00:00:16
+    Info: Peak virtual memory: 4812 megabytes
+    Info: Processing ended: Mon Mar 11 13:51:24 2024
+    Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:25
 
 

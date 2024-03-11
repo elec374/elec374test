@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/simulation/modelsim
 vALU
-Z1 !s110 1710177947
+Z1 !s110 1710179626
 !i10b 1
 !s100 Q13jkUS92GkmMGFcYPf]82
 I`H406^5Z7DCciPn>KXTM`0
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1710177947.000000
+Z4 !s108 1710179626.000000
 !s107 C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test|C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v|
 !i113 1
@@ -53,28 +53,6 @@ R4
 R5
 R6
 R7
-vand_tb
-Z8 !s110 1710177948
-!i10b 1
-!s100 dYK;[PihR89_TLY_B>AF<0
-IKUcQRWWMJ7a73l?m35bG40
-R2
-R0
-w1710177440
-8C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v
-FC:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v
-L0 2
-R3
-r1
-!s85 0
-31
-Z9 !s108 1710177948.000000
-!s107 C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test|C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v|
-!i113 1
-R5
-R6
-R7
 vbidirectional_bus
 R1
 !i10b 1
@@ -90,7 +68,7 @@ R3
 r1
 !s85 0
 31
-Z10 !s108 1710177946.000000
+R4
 !s107 C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test|C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v|
 !i113 1
@@ -98,13 +76,13 @@ R5
 R6
 R7
 vbooths_gate
-R8
+Z8 !s110 1710179627
 !i10b 1
 !s100 >MnJ73j0oBUL;Fz_JjoeF3
 IGTecM6Pao>RjOIa9ODHDg2
 R2
 R0
-Z11 w1709829114
+Z9 w1709829114
 8C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths.v
 FC:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths.v
 L0 1
@@ -112,7 +90,7 @@ R3
 r1
 !s85 0
 31
-R9
+Z10 !s108 1710179627.000000
 !s107 C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test|C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths.v|
 !i113 1
@@ -143,13 +121,13 @@ R6
 R7
 n@bus@mux@encoder
 vdatapath
-Z12 !s110 1710177946
+R1
 !i10b 1
-!s100 1XcO79MiOn5MQ?]?dSYz=0
-If`hKL5`ik@z@>f:W:k1o73
+!s100 M;2UjnAmE3[6TA:Tg>eRV0
+IPja2SBkd>gk:cgP2gmdTZ1
 R2
 R0
-w1710177890
+w1710178880
 8C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v
 FC:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v
 L0 1
@@ -157,7 +135,7 @@ R3
 r1
 !s85 0
 31
-R10
+Z11 !s108 1710179625.000000
 !s107 C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test|C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v|
 !i113 1
@@ -165,13 +143,13 @@ R5
 R6
 R7
 vdiv
-R12
+Z12 !s110 1710179625
 !i10b 1
 !s100 nJ?e@KV1YLeRFJUhiiV4g2
 IHH73DFO5Lc7kcekC<G9?Y0
 R2
 R0
-R11
+R9
 8C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/div.v
 FC:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/div.v
 L0 1
@@ -179,9 +157,31 @@ R3
 r1
 !s85 0
 31
-!s108 1710177945.000000
+!s108 1710179624.000000
 !s107 C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/div.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test|C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/div.v|
+!i113 1
+R5
+R6
+R7
+vdiv_tb
+R8
+!i10b 1
+!s100 F0GGQVdo]]dC=3=8M5oh:1
+IOG?K2b=UC2ILX9J27fO^S2
+R2
+R0
+R9
+8C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/div_tb.v
+FC:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/div_tb.v
+L0 2
+R3
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/div_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test|C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/div_tb.v|
 !i113 1
 R5
 R6
@@ -201,7 +201,7 @@ R3
 r1
 !s85 0
 31
-R10
+R11
 !s107 C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/edgetrigreg.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test|C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/edgetrigreg.v|
 !i113 1
@@ -209,13 +209,13 @@ R5
 R6
 R7
 vMDRreg
-R1
+R8
 !i10b 1
 !s100 MYQeTE7hdN6L<YSJjaIQh2
 Ia@F_mTJ3:[1K3cz][DNGG3
 R2
 R0
-R11
+R9
 8C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/MDRreg.v
 FC:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/MDRreg.v
 L0 1
@@ -238,7 +238,7 @@ R1
 IU]NUNaR9fQlcbC]4fZnGK0
 R2
 R0
-R11
+R9
 8C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/mux2x1.v
 FC:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/mux2x1.v
 L0 3
@@ -260,7 +260,7 @@ R8
 IGVjMR<agLho3Vk=HZ2_?T3
 R2
 R0
-R11
+R9
 8C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/neg_gate.v
 FC:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/neg_gate.v
 L0 1
@@ -268,7 +268,7 @@ R3
 r1
 !s85 0
 31
-R4
+R10
 !s107 C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/neg_gate.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test|C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/neg_gate.v|
 !i113 1
@@ -334,7 +334,7 @@ R3
 r1
 !s85 0
 31
-R10
+R11
 !s107 C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ripplecarryaddr.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test|C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ripplecarryaddr.v|
 !i113 1
@@ -348,7 +348,7 @@ R12
 I9HHfz6>YHA1L^;MFAYm@h1
 R2
 R0
-R11
+R9
 8C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/rotleft.v
 FC:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/rotleft.v
 L0 1
@@ -356,7 +356,7 @@ R3
 r1
 !s85 0
 31
-R10
+R11
 !s107 C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/rotleft.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test|C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/rotleft.v|
 !i113 1
@@ -370,7 +370,7 @@ R12
 IlQ6[NMH`@cfdlS^Z9LI]Y1
 R2
 R0
-R11
+R9
 8C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/rotright.v
 FC:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/rotright.v
 L0 1
@@ -378,7 +378,7 @@ R3
 r1
 !s85 0
 31
-R10
+R11
 !s107 C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/rotright.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test|C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/rotright.v|
 !i113 1
@@ -392,7 +392,7 @@ R12
 Ic57_^k6[OOg[ihN:ElIWX0
 R2
 R0
-R11
+R9
 8C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/shl.v
 FC:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/shl.v
 L0 1
@@ -400,7 +400,7 @@ R3
 r1
 !s85 0
 31
-R10
+R11
 !s107 C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/shl.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test|C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/shl.v|
 !i113 1
@@ -414,7 +414,7 @@ R12
 Ig>a[]ZSNe_B@Z3zWbLYZN3
 R2
 R0
-R11
+R9
 8C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/sra.v
 FC:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/sra.v
 L0 1
@@ -422,7 +422,7 @@ R3
 r1
 !s85 0
 31
-R10
+R11
 !s107 C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/sra.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test|C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/sra.v|
 !i113 1
@@ -436,7 +436,7 @@ R12
 I1NkD0gj9oZHIQKUjam6M;1
 R2
 R0
-R11
+R9
 8C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/srl.v
 FC:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/srl.v
 L0 1
@@ -444,7 +444,7 @@ R3
 r1
 !s85 0
 31
-R10
+R11
 !s107 C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/srl.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test|C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/srl.v|
 !i113 1
@@ -458,7 +458,7 @@ R8
 IMf4NDeTmL;b0MSZ=T5Gc?0
 R2
 R0
-R11
+R9
 8C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/sub_gate.v
 FC:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/sub_gate.v
 L0 1
@@ -466,7 +466,7 @@ R3
 r1
 !s85 0
 31
-R9
+R10
 !s107 C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/sub_gate.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test|C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/sub_gate.v|
 !i113 1
