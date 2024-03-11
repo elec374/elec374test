@@ -1,6 +1,6 @@
 module MDRUnit (
 BusMuxOut, MDataIn, clear, clk, read, MDRin, D, Q
-)
+);
 
 input [31:0] BusMuxOut, MDataIn, read, clk, clear;
 wire D;

@@ -91,7 +91,7 @@ always @(Present_state) // do the required job in each state
 				T1: begin
 				PCout <= 0;IncPc<= 0;Zin<= 0;MARin<= 0;
 				Zlowout <= 1; Read <= 1; MDRin <= 1;
-				Mdatain <= 32'b0010; // opcode for “and R1, R2, R3”
+				Mdatain <= 32'b0010; // opcode for “or R1, R2, R3”
 		end
 				T2: begin
 				Zlowout <= 0; Read <= 0; MDRin <= 0;

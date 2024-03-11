@@ -1,6 +1,12 @@
+Warning (10268): Verilog HDL information at ror_tb.v(47): always construct contains both blocking and non-blocking assignments File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ror_tb.v Line: 47
+Warning (10268): Verilog HDL information at div_tb.v(50): always construct contains both blocking and non-blocking assignments File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/div_tb.v Line: 50
 Warning (10268): Verilog HDL information at and_tb.v(47): always construct contains both blocking and non-blocking assignments File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/and_tb.v Line: 47
 Warning (10268): Verilog HDL information at sub_tb.v(47): always construct contains both blocking and non-blocking assignments File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/sub_tb.v Line: 47
 Warning (10268): Verilog HDL information at not_tb.v(47): always construct contains both blocking and non-blocking assignments File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/not_tb.v Line: 47
 Warning (10268): Verilog HDL information at neg_tb.v(47): always construct contains both blocking and non-blocking assignments File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/neg_tb.v Line: 47
 Warning (10268): Verilog HDL information at or_tb.v(47): always construct contains both blocking and non-blocking assignments File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/or_tb.v Line: 47
 Warning (10268): Verilog HDL information at rol_tb.v(47): always construct contains both blocking and non-blocking assignments File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/rol_tb.v Line: 47
+Warning (10268): Verilog HDL information at srl_tb.v(47): always construct contains both blocking and non-blocking assignments File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/srl_tb.v Line: 47
+Warning (10268): Verilog HDL information at sra_tb.v(47): always construct contains both blocking and non-blocking assignments File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/sra_tb.v Line: 47
+Warning (10268): Verilog HDL information at shl_tb.v(47): always construct contains both blocking and non-blocking assignments File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/shl_tb.v Line: 47
+Warning (10268): Verilog HDL information at booths_tb.v(50): always construct contains both blocking and non-blocking assignments File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths_tb.v Line: 50

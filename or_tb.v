@@ -54,8 +54,7 @@ always @(Present_state) // do the required job in each state
 				MDRin <= 0; Yin <= 0;
 				Read <= 0; AND <= 0;
 				R1in <= 0; R2in <= 0; R3in <= 0; Mdatain <= 32'h00000000;
-								MARin <= 0; IncPc<=0; Zin<=0; PCin<=0;
-
+				MARin <= 0; IncPc<=0; Zin<=0; PCin<=0;
 		end
 				Reg_load1a: begin
 				Mdatain <= 32'h00000012;
@@ -92,7 +91,7 @@ always @(Present_state) // do the required job in each state
 				T1: begin
 				PCout <= 0;IncPc<= 0;Zin<= 0;MARin<= 0;
 				Zlowout <= 1; Read <= 1; MDRin <= 1;
-				Mdatain <= 32'b0011; // opcode for “and R1, R2, R3”
+				Mdatain <= 32'b0011; // opcode for “or R1, R2, R3”
 		end
 				T2: begin
 				Zlowout <= 0; Read <= 0; MDRin <= 0;

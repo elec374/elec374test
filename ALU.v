@@ -1,10 +1,11 @@
+`timescale 1ns/10ps
 module ALU (
     input wire [3:0] opcode,          // 4-bit opcode to select operation
 	 input wire exec,
     input wire [31:0] operand_A,      // First input operand
     input wire [31:0] operand_B,      // Second input operand
-    output wire [31:0] result,          // Output result
-	 output wire [31:0] HI
+    output wire [63:0] result          // Output result
+	 //output wire [31:0] HI
 );
 
 // Parameter definitions for opcode
@@ -45,7 +46,7 @@ reg [31:0] operation_resultLO, operation_resultHI;
 
 always @(*) begin
     if (exec) begin
-        casex (opcode)
+        case (opcode)
             ADD:begin
 					operation_resultLO  = add_result;
 					operation_resultHI = 32'b0;
@@ -110,16 +111,12 @@ always @(*) begin
 					operation_resultLO = div_result;
 					operation_resultHI = rem_result;
 				end
-				
-            default:begin
-					operation_resultLO = 32'b0; 
-					operation_resultHI = 32'b0;
-				end
+			
         endcase
     end
 end
 
-assign result = operation_resultLO;
-assign HI = operation_resultHI;
+assign result = {operation_resultHI, operation_resultLO};
+//assign HI = operation_resultHI;
 
 endmodule 
