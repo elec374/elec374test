@@ -38,8 +38,8 @@ edgetrigreg Y(clear, clock, Yin, BusMuxOut, BusMuxInY);
 edgetrigreg HI(clear, clock, HIin, BusMuxOut, BusMuxInHI);
 edgetrigreg LO(clear, clock, LOin, BusMuxOut, BusMuxInLO);
 
-edgetrigreg ZHI(clear, clock, ZHIin, BusMuxOut, BusMuxInZHI);
-edgetrigreg ZLO(clear, clock, ZLOin, BusMuxOut, BusMuxInZLO);
+edgetrigreg ZHI(clear, clock, 1, alu_output[63:32], BusMuxInZHI);
+edgetrigreg ZLO(clear, clock, 1, alu_output[31:0], BusMuxInZLO);
 
 MDRreg MDR(clear, clock, MDRin, Mdatain, BusMuxOut, Read, BusMuxInMDR);
 
