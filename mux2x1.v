@@ -1,5 +1,3 @@
-//2 - 1 multiplexer 
-//S - Select | D0,D1 - Input
 module mux2x1(
 	input [31:0] Mdatain, BusMuxOut, 
 	input read, 

@@ -5,4 +5,4 @@ module neg_gate(
 
 assign C = ~A + 1;
 
-endmodule
+endmodule 

@@ -1,32 +1,49 @@
 module booths_gate(
-    input [31:0] multiplicand,
-    input [31:0] multiplier,
-    output [31:0] outLO,
-	 output [31:0] outHI
+    input signed [31:0] multiplicand,
+    input signed [31:0] multiplier,
+    output signed [31:0] outLO,
+    output signed [31:0] outHI
 );
-    reg [63:0] m, q, acc, product;
-    reg q_1;
+
+    reg [2:0] combination_bits [15:0];                
+    reg signed [32:0] partial_products [15:0];         
+    reg signed [63:0] shifted_partial_products [15:0];
+    reg signed [31:0] sum_of_partial_products_low;   
+    reg signed [31:0] sum_of_partial_products_high;  
+    wire signed [32:0] neg_operand_x;
+    
     integer i;
 
-    always @(multiplicand or multiplier) begin
-        m = multiplicand;
-        q = multiplier;
-        acc = 0;
-        q_1 = 0;
+    assign neg_operand_x = -multiplicand;
 
-        for (i = 0; i < 32; i = i + 1) begin
-            case ({q[0], q_1})
-                2'b01: acc = acc + m;  // If 01, add M to A
-                2'b10: acc = acc - m;  // If 10, subtract M from A
+    always @ (multiplicand or multiplier or neg_operand_x) begin
+        combination_bits[0] = {multiplier[1], multiplier[0], 1'b0};
+        
+        for(i=1; i<16; i=i+1) begin
+             combination_bits[i] = {multiplier[2*i+1], multiplier[2*i], multiplier[2*i-1]};
+        end
+
+        for(i=0; i<16; i=i+1) begin 
+            case(combination_bits[i])
+                3'b001, 3'b010 : partial_products[i] = {multiplicand[31], multiplicand};
+                3'b011 : partial_products[i] = {multiplicand, 1'b0};
+                3'b100 : partial_products[i] = {neg_operand_x[31:0], 1'b0};
+                3'b101, 3'b110 : partial_products[i] = neg_operand_x;
+                default : partial_products[i] = 0;
             endcase
+            
+            shifted_partial_products[i] = partial_products[i] << (2*i);
+        end
 
-            q_1 = q[0];
-            q = {acc[0], q[31:1]};
-            acc = {acc[63], acc[63:1]}; // Keep sign bit for arithmetic shift
+        sum_of_partial_products_low = shifted_partial_products[0][31:0];  
+        sum_of_partial_products_high = shifted_partial_products[0][63:32]; 
+        
+        for(i=1; i<16; i=i+1) begin 
+            sum_of_partial_products_low = sum_of_partial_products_low + shifted_partial_products[i][31:0];
+            sum_of_partial_products_high = sum_of_partial_products_high + shifted_partial_products[i][63:32];
         end
     end
-
-    assign outHI = acc; // The final product is the combination of acc and q
-	 assign outLO = q; // The final product is the combination of acc and q
+    assign outLO = sum_of_partial_products_low;
+    assign outHI = sum_of_partial_products_high;
 
 endmodule 

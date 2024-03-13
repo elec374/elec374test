@@ -1,22 +1,23 @@
 `timescale 1ns/10ps
 module or_tb;
 
-reg Zlowout, MDRout, R2out, R3out, MARin, IncPc, Zin, PCin;
+reg Zlowout, ZHighout, MDRout, R2out, R3out, MARin, IncPc, Zin, PCin;
 reg MDRin, Yin, PCout, IRin;
 reg Read, AND, R1in, R2in, R3in;
 reg clock;
+reg HIin;
 reg [31:0] Mdatain;
 reg clear;
  
 parameter Default = 4'b0000, Reg_load1a = 4'b0001, Reg_load1b = 4'b0010, Reg_load2a = 4'b0011,
  Reg_load2b = 4'b0100, Reg_load3a = 4'b0101, Reg_load3b = 4'b0110, T0 = 4'b0111,
- T1 = 4'b1000, T2 = 4'b1001, T3 = 4'b1010, T4 = 4'b1011, T5 = 4'b1100;
+ T1 = 4'b1000, T2 = 4'b1001, T3 = 4'b1010, T4 = 4'b1011, T5 = 4'b1100, T6 = 4'b1101;
 
 reg [3:0] Present_state = Default;
  
 datapath DUT(.PCout(PCout), .Zlowout(Zlowout), .MDRout(MDRout), .R2out(R2out), 
 .R3out(R3out), .MDRin(MDRin), .Yin(Yin), .Read(Read), .R1in(R1in), .R2in(R2in), 
-.R3in(R3in), .clock(clock), .Mdatain(Mdatain), .clear(clear), .IRin(IRin), .AND(AND));
+.R3in(R3in), .clock(clock), .Mdatain(Mdatain), .clear(clear), .IRin(IRin), .AND(AND), .ZHighout(ZHighout), .HIin(HIin));
 
 initial
 	begin
@@ -40,6 +41,7 @@ always @(posedge clock)
 			T2 : Present_state = T3;
 			T3 : Present_state = T4;
 			T4 : Present_state = T5;
+			T5 : Present_state = T6;
 		endcase
 	end
 
@@ -48,7 +50,7 @@ always @(Present_state) // do the required job in each state
 	begin
 		case (Present_state) // assert the required signals in each clock cycle
 				Default: begin
-				PCout <= 0; Zlowout <= 0; MDRout <= 0; // initialize the signals
+				PCout <= 0; Zlowout <= 0; ZHighout <= 0; MDRout <= 0; // initialize the signals
 				R2out <= 0; R3out <= 0;
 				IRin <=0;
 				MDRin <= 0; Yin <= 0;
@@ -110,6 +112,13 @@ always @(Present_state) // do the required job in each state
 				R3out <= 0; AND <= 0; 
 				Zlowout <= 1; R1in <= 1; // de-assert Zlowout and R1in
 		end
+				T6: begin
+				Zlowout<= 0; R1in <=0;
+				ZHighout <= 1; HIin <= 1;
+				#10 ZHighout <= 1; HIin <= 1;
+		end
 		endcase
 	end
 endmodule 	
+
+				

@@ -4,4 +4,4 @@ module not_gate(
 );
 
 assign notA = ~A;
-endmodule
+endmodule 

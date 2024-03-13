@@ -1,7 +1,7 @@
 `timescale 1ns/10ps
 module div_tb;
 
-reg Zlowout, Zhighout, MDRout, R4out, R5out,MARin, IncPc, Zin, PCin;
+reg Zlowout, ZHighout, MDRout, R4out, R5out,MARin, IncPc, Zin, PCin;
 reg MDRin, Yin, PCout, IRin;
 reg Read, AND,  R4in, R5in;
 reg LOin, HIin;
@@ -17,7 +17,7 @@ reg [3:0] Present_state = Default;
  
 datapath DUT(.PCout(PCout), .Zlowout(Zlowout), .MDRout(MDRout), .R4out(R4out), 
 .R5out(R5out), .MDRin(MDRin), .Yin(Yin), .Read(Read), .R1in(R1in), .R4in(R4in), 
-.R5in(R5in), .clock(clock), .Mdatain(Mdatain), .clear(clear), .IRin(IRin), .AND(AND), .Zhighout(Zhighout), .LOin(LOin), .HIin(HIin));
+.R5in(R5in), .clock(clock), .Mdatain(Mdatain), .clear(clear), .IRin(IRin), .AND(AND), .ZHighout(ZHighout), .LOin(LOin), .HIin(HIin));
 
 initial
 	begin
@@ -51,14 +51,14 @@ always @(Present_state) // do the required job in each state
 	begin
 		case (Present_state) // assert the required signals in each clock cycle
 				Default: begin
-				PCout <= 0; Zlowout <= 0; Zhighout <= 0; MDRout <= 0; // initialize the signals
+				PCout <= 0; Zlowout <= 0; ZHighout <= 0; MDRout <= 0; // initialize the signals
 				R4out <= 0; R5out <= 0;
 				IRin <=0;
 				MDRin <= 0; Yin <= 0;
 				Read <= 0; AND <= 0;
 				R4in <= 0; R5in <= 0; Mdatain <= 32'h00000000;
 				HIin <=0; LOin <=0;
-								MARin <= 0; IncPc<=0; Zin<=0; PCin<=0;
+				MARin <= 0; IncPc<=0; Zin<=0; PCin<=0;
 
 		end
 				Reg_load1a: begin
@@ -86,11 +86,11 @@ always @(Present_state) // do the required job in each state
 				Read <= 1; MDRin <= 1;
 				#20 Read <= 0; MDRin <= 0;
 		end
-			T0: begin 
-				PCout <= 1;
+				T0: begin 
+				PCout <= 1; IncPc<= 1; Zin<= 1; MARin<= 1;
 		end
 				T1: begin
-				PCout <= 0;
+				PCout <= 0; IncPc<= 0; Zin<= 0; MARin<= 0;
 				Zlowout <= 1; Read <= 1; MDRin <= 1;
 				Mdatain <= 32'b1100; // opcode for “div R4, R5”
 		end
@@ -113,9 +113,9 @@ always @(Present_state) // do the required job in each state
 				
 		end
 				T6: begin
-				Zhighout <= 1; HIin <= 1;
+				ZHighout <= 1; HIin <= 1;
 				Zlowout<= 0; LOin <=0;
-				#10 Zhighout <= 1; HIin <= 1;
+				#10 ZHighout <= 1; HIin <= 1;
 				end
 		endcase
 	end

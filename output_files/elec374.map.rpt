@@ -1,5 +1,5 @@
 Analysis & Synthesis report for elec374
-Mon Mar 11 13:51:24 2024
+Wed Mar 13 08:29:34 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -39,15 +39,14 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
  31. Parameter Settings for User Entity Instance: edgetrigreg:ZLO
  32. Parameter Settings for User Entity Instance: MDRreg:MDR|edgetrigreg:RegMDR
  33. Parameter Settings for User Entity Instance: ALU:alu
- 34. Port Connectivity Checks: "ALU:alu|not_gate:NG"
- 35. Port Connectivity Checks: "ALU:alu"
- 36. Port Connectivity Checks: "BusMuxEncoder:bme"
- 37. Port Connectivity Checks: "edgetrigreg:ZLO"
- 38. Port Connectivity Checks: "edgetrigreg:ZHI"
- 39. Post-Synthesis Netlist Statistics for Top Partition
- 40. Elapsed Time Per Partition
- 41. Analysis & Synthesis Messages
- 42. Analysis & Synthesis Suppressed Messages
+ 34. Port Connectivity Checks: "ALU:alu"
+ 35. Port Connectivity Checks: "BusMuxEncoder:bme"
+ 36. Port Connectivity Checks: "edgetrigreg:ZLO"
+ 37. Port Connectivity Checks: "edgetrigreg:ZHI"
+ 38. Post-Synthesis Netlist Statistics for Top Partition
+ 39. Elapsed Time Per Partition
+ 40. Analysis & Synthesis Messages
+ 41. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -73,7 +72,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Mar 11 13:51:24 2024           ;
+; Analysis & Synthesis Status     ; Successful - Wed Mar 13 08:29:34 2024           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; elec374                                         ;
 ; Top-level Entity Name           ; datapath                                        ;
@@ -569,7 +568,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------+
 ; Parameter Name ; Value ; Type                        ;
 +----------------+-------+-----------------------------+
-; ADD            ; 0000  ; Unsigned Binary             ;
+; ADD            ; 1101  ; Unsigned Binary             ;
 ; SUB            ; 0001  ; Unsigned Binary             ;
 ; AND            ; 0010  ; Unsigned Binary             ;
 ; OR             ; 0011  ; Unsigned Binary             ;
@@ -584,15 +583,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DIV            ; 1100  ; Unsigned Binary             ;
 +----------------+-------+-----------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU:alu|not_gate:NG"                                                                                     ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                  ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; notA ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -660,7 +650,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Mon Mar 11 13:51:09 2024
+    Info: Processing started: Wed Mar 13 08:29:13 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off elec374 -c elec374
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -691,7 +681,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file datapat
 Info (12021): Found 1 design units, including 1 entities, in source file bidirectional_bus.v
     Info (12023): Found entity 1: bidirectional_bus File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux2x1.v
-    Info (12023): Found entity 1: mux2x1 File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/mux2x1.v Line: 3
+    Info (12023): Found entity 1: mux2x1 File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/mux2x1.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file busmuxencoder.v
     Info (12023): Found entity 1: BusMuxEncoder File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/BusMuxEncoder.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file and_gate.v
@@ -733,6 +723,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file booths_
     Info (12023): Found entity 1: booths_tb File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths_tb.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file zreg.v
     Info (12023): Found entity 1: alu_edgetrigreg File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/zreg.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file add_tb.v
+    Info (12023): Found entity 1: add_tb File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/add_tb.v Line: 2
 Warning (10236): Verilog HDL Implicit Net warning at div_tb.v(19): created implicit net for "R1in" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/div_tb.v Line: 19
 Warning (10236): Verilog HDL Implicit Net warning at datapath.v(46): created implicit net for "Yout" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 46
 Warning (10236): Verilog HDL Implicit Net warning at datapath.v(46): created implicit net for "IRout" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 46
@@ -745,93 +737,89 @@ Info (12128): Elaborating entity "BusMuxEncoder" for hierarchy "BusMuxEncoder:bm
 Warning (10762): Verilog HDL Case Statement warning at BusMuxEncoder.v(8): can't check case statement for completeness because the case expression has too many possible states File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/BusMuxEncoder.v Line: 8
 Info (10264): Verilog HDL Case Statement information at BusMuxEncoder.v(8): all case item expressions in this case statement are onehot File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/BusMuxEncoder.v Line: 8
 Info (12128): Elaborating entity "ALU" for hierarchy "ALU:alu" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 48
-Warning (10858): Verilog HDL warning at ALU.v(27): object not_result used but never assigned File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 27
-Warning (10270): Verilog HDL Case Statement warning at ALU.v(49): incomplete case statement has no default case item File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 49
-Warning (10240): Verilog HDL Always Construct warning at ALU.v(48): inferring latch(es) for variable "operation_resultLO", which holds its previous value in one or more paths through the always construct File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Warning (10240): Verilog HDL Always Construct warning at ALU.v(48): inferring latch(es) for variable "operation_resultHI", which holds its previous value in one or more paths through the always construct File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Warning (10030): Net "not_result" at ALU.v(27) has no driver or initial value, using a default initial value '0' File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 27
-Info (10041): Inferred latch for "operation_resultHI[0]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[1]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[2]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[3]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[4]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[5]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[6]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[7]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[8]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[9]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[10]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[11]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[12]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[13]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[14]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[15]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[16]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[17]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[18]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[19]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[20]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[21]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[22]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[23]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[24]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[25]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[26]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[27]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[28]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[29]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[30]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultHI[31]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[0]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[1]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[2]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[3]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[4]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[5]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[6]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[7]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[8]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[9]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[10]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[11]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[12]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[13]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[14]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[15]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[16]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[17]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[18]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[19]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[20]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[21]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[22]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[23]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[24]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[25]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[26]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[27]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[28]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[29]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[30]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (10041): Inferred latch for "operation_resultLO[31]" at ALU.v(48) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
-Info (12128): Elaborating entity "and_gate" for hierarchy "ALU:alu|and_gate:AG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 31
-Info (12128): Elaborating entity "or_gate" for hierarchy "ALU:alu|or_gate:OG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 32
-Info (12128): Elaborating entity "not_gate" for hierarchy "ALU:alu|not_gate:NG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 33
-Info (12128): Elaborating entity "rotright_gate" for hierarchy "ALU:alu|rotright_gate:ROTRG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 34
-Info (12128): Elaborating entity "rotleft_gate" for hierarchy "ALU:alu|rotleft_gate:ROTLG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 35
-Info (12128): Elaborating entity "shl_gate" for hierarchy "ALU:alu|shl_gate:SHLG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 36
-Info (12128): Elaborating entity "sra_gate" for hierarchy "ALU:alu|sra_gate:SHRAG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 37
-Info (12128): Elaborating entity "srl_gate" for hierarchy "ALU:alu|srl_gate:SHRG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 38
-Info (12128): Elaborating entity "neg_gate" for hierarchy "ALU:alu|neg_gate:NEGG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 39
-Info (12128): Elaborating entity "ripplecarryaddr" for hierarchy "ALU:alu|ripplecarryaddr:ADDG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 40
-Info (12128): Elaborating entity "booths_gate" for hierarchy "ALU:alu|booths_gate:MULG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 41
-Warning (10199): Verilog HDL Case Statement warning at booths.v(19): case item expression never matches the case expression File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths.v Line: 19
-Warning (10270): Verilog HDL Case Statement warning at booths.v(18): incomplete case statement has no default case item File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths.v Line: 18
-Info (10264): Verilog HDL Case Statement information at booths.v(18): all case item expressions in this case statement are onehot File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths.v Line: 18
-Warning (10230): Verilog HDL assignment warning at booths.v(29): truncated value with size 64 to match size of target (32) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths.v Line: 29
-Warning (10230): Verilog HDL assignment warning at booths.v(30): truncated value with size 64 to match size of target (32) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths.v Line: 30
-Info (12128): Elaborating entity "div" for hierarchy "ALU:alu|div:DIVG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 42
-Info (12128): Elaborating entity "sub_gate" for hierarchy "ALU:alu|sub_gate:SUBG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 43
+Warning (10270): Verilog HDL Case Statement warning at ALU.v(48): incomplete case statement has no default case item File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 48
+Warning (10240): Verilog HDL Always Construct warning at ALU.v(47): inferring latch(es) for variable "operation_resultLO", which holds its previous value in one or more paths through the always construct File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Warning (10240): Verilog HDL Always Construct warning at ALU.v(47): inferring latch(es) for variable "operation_resultHI", which holds its previous value in one or more paths through the always construct File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[0]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[1]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[2]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[3]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[4]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[5]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[6]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[7]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[8]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[9]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[10]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[11]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[12]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[13]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[14]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[15]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[16]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[17]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[18]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[19]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[20]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[21]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[22]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[23]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[24]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[25]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[26]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[27]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[28]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[29]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[30]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultHI[31]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[0]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[1]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[2]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[3]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[4]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[5]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[6]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[7]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[8]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[9]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[10]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[11]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[12]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[13]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[14]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[15]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[16]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[17]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[18]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[19]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[20]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[21]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[22]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[23]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[24]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[25]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[26]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[27]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[28]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[29]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[30]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (10041): Inferred latch for "operation_resultLO[31]" at ALU.v(47) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 47
+Info (12128): Elaborating entity "and_gate" for hierarchy "ALU:alu|and_gate:AG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 30
+Info (12128): Elaborating entity "or_gate" for hierarchy "ALU:alu|or_gate:OG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 31
+Info (12128): Elaborating entity "not_gate" for hierarchy "ALU:alu|not_gate:NG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 32
+Info (12128): Elaborating entity "rotright_gate" for hierarchy "ALU:alu|rotright_gate:ROTRG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 33
+Info (12128): Elaborating entity "rotleft_gate" for hierarchy "ALU:alu|rotleft_gate:ROTLG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 34
+Info (12128): Elaborating entity "shl_gate" for hierarchy "ALU:alu|shl_gate:SHLG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 35
+Info (12128): Elaborating entity "sra_gate" for hierarchy "ALU:alu|sra_gate:SHRAG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 36
+Info (12128): Elaborating entity "srl_gate" for hierarchy "ALU:alu|srl_gate:SHRG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 37
+Info (12128): Elaborating entity "neg_gate" for hierarchy "ALU:alu|neg_gate:NEGG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 38
+Info (12128): Elaborating entity "ripplecarryaddr" for hierarchy "ALU:alu|ripplecarryaddr:ADDG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 39
+Info (12128): Elaborating entity "booths_gate" for hierarchy "ALU:alu|booths_gate:MULG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 40
+Warning (10199): Verilog HDL Case Statement warning at booths.v(28): case item expression never matches the case expression File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths.v Line: 28
+Warning (10199): Verilog HDL Case Statement warning at booths.v(29): case item expression never matches the case expression File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths.v Line: 29
+Warning (10199): Verilog HDL Case Statement warning at booths.v(31): case item expression never matches the case expression File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths.v Line: 31
+Info (12128): Elaborating entity "div" for hierarchy "ALU:alu|div:DIVG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 41
+Info (12128): Elaborating entity "sub_gate" for hierarchy "ALU:alu|sub_gate:SUBG" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/ALU.v Line: 42
 Info (12128): Elaborating entity "bidirectional_bus" for hierarchy "bidirectional_bus:bus" File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/datapath.v Line: 49
 Warning (10270): Verilog HDL Case Statement warning at bidirectional_bus.v(14): incomplete case statement has no default case item File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
 Warning (10240): Verilog HDL Always Construct warning at bidirectional_bus.v(14): inferring latch(es) for variable "q", which holds its previous value in one or more paths through the always construct File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
@@ -867,7 +855,7 @@ Info (10041): Inferred latch for "q[28]" at bidirectional_bus.v(14) File: C:/Use
 Info (10041): Inferred latch for "q[29]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
 Info (10041): Inferred latch for "q[30]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
 Info (10041): Inferred latch for "q[31]" at bidirectional_bus.v(14) File: C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/bidirectional_bus.v Line: 14
-Warning (12241): 5 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/output_files/elec374.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -959,11 +947,11 @@ Warning (21074): Design contains 84 input pin(s) that do not drive logic
 Info (21057): Implemented 84 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 84 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 104 warnings
-    Info: Peak virtual memory: 4812 megabytes
-    Info: Processing ended: Mon Mar 11 13:51:24 2024
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:25
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 102 warnings
+    Info: Peak virtual memory: 4809 megabytes
+    Info: Processing ended: Wed Mar 13 08:29:34 2024
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:36
 
 
 +------------------------------------------+

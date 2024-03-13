@@ -5,11 +5,10 @@ module ALU (
     input wire [31:0] operand_A,      // First input operand
     input wire [31:0] operand_B,      // Second input operand
     output wire [63:0] result          // Output result
-	 //output wire [31:0] HI
 );
 
 // Parameter definitions for opcode
-parameter ADD = 4'b0000;
+parameter ADD = 4'b1101;
 parameter SUB = 4'b0001;
 parameter AND = 4'b0010;
 parameter OR  = 4'b0011;
@@ -30,7 +29,7 @@ wire [31:0] div_result, rem_result;
 
 and_gate AG(.A(operand_A), .B(operand_B), .C(and_result));
 or_gate OG(.A(operand_A), .B(operand_B), .C(or_result));
-not_gate NG(.A(operand_A) );
+not_gate NG(.A(operand_A), .notA(not_result));
 rotright_gate ROTRG(.A(operand_A), .B(operand_B[4:0]), .out(ror_result));
 rotleft_gate ROTLG(.A(operand_A), .B(operand_B[4:0]), .out(rol_result));
 shl_gate SHLG(.A(operand_A), .B(operand_B[4:0]), .C(shl_result));
@@ -117,6 +116,5 @@ always @(*) begin
 end
 
 assign result = {operation_resultHI, operation_resultLO};
-//assign HI = operation_resultHI;
 
 endmodule 

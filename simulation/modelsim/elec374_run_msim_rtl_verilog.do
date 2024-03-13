@@ -26,11 +26,11 @@ vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/el
 vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/booths.v}
 vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/sub_gate.v}
 
-vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/div_tb.v}
+vlog -vlog01compat -work work +incdir+C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test {C:/Users/siyun/OneDrive/Desktop/ELEC374/elec374test/add_tb.v}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  div_tb
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  add_tb
 
 add wave *
 view structure
 view signals
-run 500 ns
+run -all
