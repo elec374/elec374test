@@ -70,7 +70,7 @@ always @(Present_state) // do the required job in each state
 				#20 MDRout <= 0; R2in <= 0; // initialize R2 with the value $12
 		end
 				Reg_load2a: begin
-				Mdatain <= 32'h00000014;
+				Mdatain <= 32'h00000001;
 				Read <= 1; MDRin <= 1;
 				#20 Read <= 0; MDRin <= 0;
 		end

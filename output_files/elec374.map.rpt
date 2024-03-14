@@ -1,5 +1,5 @@
 Analysis & Synthesis report for elec374
-Wed Mar 13 08:29:34 2024
+Wed Mar 13 13:18:09 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -72,7 +72,7 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Mar 13 08:29:34 2024           ;
+; Analysis & Synthesis Status     ; Successful - Wed Mar 13 13:18:09 2024           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; elec374                                         ;
 ; Top-level Entity Name           ; datapath                                        ;
@@ -650,7 +650,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Wed Mar 13 08:29:13 2024
+    Info: Processing started: Wed Mar 13 13:17:48 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off elec374 -c elec374
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -947,11 +947,11 @@ Warning (21074): Design contains 84 input pin(s) that do not drive logic
 Info (21057): Implemented 84 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 84 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 102 warnings
-    Info: Peak virtual memory: 4809 megabytes
-    Info: Processing ended: Wed Mar 13 08:29:34 2024
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 101 warnings
+    Info: Peak virtual memory: 4810 megabytes
+    Info: Processing ended: Wed Mar 13 13:18:09 2024
     Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:36
+    Info: Total CPU time (on all processors): 00:00:35
 
 
 +------------------------------------------+
