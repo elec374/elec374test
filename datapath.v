@@ -2,8 +2,8 @@ module datapath(
 
 	input clear, clock, 
 	input [31:0] Mdatain,
-	input PCin, IRin, Yin, HIin, LOin, MDRin, ZHIin, ZLOin, Read, AND,
-	input wire R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9in, R10in, R11in, R12in, R13in, R14in, R15in,
+	input PCin, IRin, Yin, HIin, LOin, MDRin, ZHIin, ZLOin, Read, AND, MARin,
+	input wire enable, R0in, R1in, R2in, R3in, R4in, R5in, R6in, R7in, R8in, R9in, R10in, R11in, R12in, R13in, R14in, R15in,
 	
 	input HIout, LOout, ZHighout, Zlowout, PCout, MDRout, InPortout, Cout,
 	input R0out, R1out, R2out, R3out, R4out, R5out, R6out, R7out, R8out, R9out, R10out, R11out, R12out, R13out, R14out, R15out
@@ -14,6 +14,7 @@ wire [31:0] BusMuxInPC, BusMuxInIR, BusMuxInY, BusMuxInHI, BusMuxInLO, BusMuxInZ
 wire [5:0] BusMuxSelect;
 wire [31:0] BusMuxOut;
 wire [63:0] alu_output;
+wire [8:0] address;
 
 edgetrigreg R0(clear, clock, R0in, BusMuxOut, BusMuxInR0);
 edgetrigreg R1(clear, clock, R1in, BusMuxOut, BusMuxInR1);
@@ -43,11 +44,20 @@ edgetrigreg ZLO(clear, clock, 1, alu_output[31:0], BusMuxInZLO);
 
 MDRreg MDR(clear, clock, MDRin, Mdatain, BusMuxOut, Read, BusMuxInMDR);
 
+mar MAR(clear, clock, MARin, BusMuxOut, address);
+
 BusMuxEncoder bme({Yout,IRout,Cout, InPortout, MDRout, PCout, Zlowout, ZHighout, LOout, HIout, R15out, R14out, R13out, R12out, R11out, R10out, R9out, R8out, R7out, R6out, R5out, R4out, R3out, R2out, R1out,R0out}, BusMuxSelect);
 
 ALU alu(BusMuxInIR, AND, BusMuxInY, BusMuxOut, alu_output);
 bidirectional_bus bus(BusMuxSelect, BusMuxInR0, BusMuxInR1,  BusMuxInR2, BusMuxInR3, BusMuxInR4, BusMuxInR5, BusMuxInR6, BusMuxInR7, BusMuxInR8, BusMuxInR9, BusMuxInR10, BusMuxInR11, BusMuxInR12, BusMuxInR13, BusMuxInR14, BusMuxInR15, BusMuxInHI, BusMuxInLO, BusMuxInZHI, BusMuxInZLO, BusMuxInPC, BusMuxInMDR, BusMuxInPort, BusMuxInCsignextended,BusMuxInIR,BusMuxInY, BusMuxOut);
 
+ram RAM (
+	.address(address),
+	.clock(clock),
+	.data(BusMuxInMDR),
+	.wren(enable),
+	.q(Mdatain)
+);
 
 
 endmodule 

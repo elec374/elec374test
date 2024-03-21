@@ -1,4 +1,4 @@
-module mar #(parameter DATA_WIDTH_IN = 32, DATA_WIDTH_OUT = 9, INIT = 9'h0)(
+module mar #(parameter DATA_WIDTH_IN = 32, DATA_WIDTH_OUT = 8, INIT = 8'h0)(
 	input clear,clock,enable,
 	input [DATA_WIDTH_IN -1:0]BusMuxOut,
 	output wire [DATA_WIDTH_OUT-1:0]BusMuxIn
